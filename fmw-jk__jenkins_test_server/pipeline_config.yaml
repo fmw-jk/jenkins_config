@@ -1,28 +1,28 @@
-pipeline_github_url: git@github.com/ipa320/jenkins_pipelines/user_name__server_name
-pipeline_name: user_name__server_name
-pipeline_type: [build, gazebo, hardware, release] # labels for jobs/nodes and server config
-user_name: test_user
-email: test@ipa.fhg.de
+pipeline_github_url: git@github.com/ipa320/jenkins_pipelines/fmw-jk__jenkins_test_server
+pipeline_name: fmw-jk__jenkins_test_server
+pipeline_type: [build] #, gazebo, hardware, release] # labels for jobs/nodes and server config
+user_name: fmw-jk
+email: jannik.kett@gmail.com
 committer: 'false'
-ros_distro: [test_rosdistro] # electric, fuerte, groovy
+ros_distro: [groovy] # electric, fuerte, groovy
 
 #prio_distro: natty
 #prio_arch: amd64
 prio_distro_arch:
     test_rosdistro:
-        ubuntu_distro: natty
+        ubuntu_distro: oneiric
         arch: amd64
 
 repositories:
     test_repo_1:
         type : git  # git, hg, svn
-        url: git@github.com/user/repo1
-        version: master
+        url: git://github.com/ros/ros_tutorials.git
+        version: groovy-devel
         poll: 'true'
         dep: 'false'
     test_repo_2:
         type: git
-        url: git@github.com/user/repo2
-        version: test
+        url: git://github.com/ros/catkin.git
+        version: groovy-devel
         poll: 'false'
         dep: 'true'
