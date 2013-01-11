@@ -14,13 +14,13 @@ prio_distro_arch:
         arch: amd64
 
 repositories:
-    test_repo_1:
+    ros_tutorials:
         type : git  # git, hg, svn
         url: git://github.com/ros/ros_tutorials.git
         version: groovy-devel
         poll: 'true'
         dep: 'false'
-    test_repo_2:
+    catkin:
         type: git
         url: git://github.com/ros/catkin.git
         version: groovy-devel
