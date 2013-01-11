@@ -18,13 +18,13 @@ repositories:
         type : git  # git, hg, svn
         url: git://github.com/ros/ros_tutorials.git
         version: groovy-devel
-        poll: 'true'
-        dep: 'false'
-        private: 'false'
+        poll: true
+        dep: false
+        private: false
     catkin:
         type: git
         url: git://github.com/ros/catkin.git
         version: groovy-devel
-        poll: 'false'
-        dep: 'true'
-        private: 'false'
+        poll: false
+        dep: true
+        private: false
