@@ -21,7 +21,7 @@ repositories:
         poll: 'true'
         dep: 'false'
         private: 'false'
-   catkin:
+    catkin:
         type: git
         url: git://github.com/ros/catkin.git
         version: groovy-devel
