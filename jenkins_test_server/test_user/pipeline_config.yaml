@@ -1,6 +1,6 @@
-pipeline_github_url: git@github.com/ipa320/jenkins_pipelines/user_name__server_name
-pipeline_name: user_name__server_name
-#pipeline_type: [build, gazebo, hardware, release] # labels for jobs/nodes and server config
+pipeline_github_url: git@github.com/ipa320/jenkins_pipelines/server_name/user_name
+#pipeline_name: user_name
+#pipeline_type: [build, gazebo, hardware, release] # labels for jobs/nodes and server config # now defined in each repo
 user_name: test_user
 server_name: server_name
 email: test@ipa.fhg.de
@@ -11,7 +11,7 @@ repositories:
         type: git  # git, hg, svn
         url: git@github.com/user/repo1
         version: master
-        private: 'false'
+        private: false
         ros_distro:
             test_rosdistro:
                 ubuntu_distro: natty
@@ -24,14 +24,14 @@ repositories:
                 type: git  # git, hg, svn
                 url: git@github.com/user_x/dep_repo_1
                 version: master
-                private: 'true'
+                private: true
         jobs: [normal, sim, db, down, app, hw, release]
 
     test_repo_2:
         type: git
         url: git@github.com/user/repo2
         version: test
-        private: 'false'
+        private: false
         ros_distro:
             test_rosdistro:
                 ubuntu_distro: natty

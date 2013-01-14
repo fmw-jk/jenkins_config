@@ -1,30 +1,23 @@
-pipeline_github_url: git@github.com/ipa320/jenkins_pipelines/fmw-jk__jenkins_test_server
-pipeline_name: fmw-jk__jenkins_test_server
-pipeline_type: [build] #, gazebo, hardware, release] # labels for jobs/nodes and server config
+pipeline_github_url: git@github.com/ipa320/jenkins_pipelines/jenkins_test_server/fmw-jk
 user_name: fmw-jk
+server_name: jenkins_test_server
 email: jannik.kett@gmail.com
 committer: 'false'
-ros_distro: [groovy] # electric, fuerte, groovy
-
-#prio_distro: natty
-#prio_arch: amd64
-prio_distro_arch:
-    test_rosdistro:
-        ubuntu_distro: oneiric
-        arch: amd64
 
 repositories:
     ros_tutorials:
-        type : git  # git, hg, svn
+        type : git
         url: git://github.com/ros/ros_tutorials.git
         version: groovy-devel
-        poll: true
-        dep: false
         private: false
-    catkin:
-        type: git
-        url: git://github.com/ros/catkin.git
-        version: groovy-devel
-        poll: false
-        dep: true
-        private: false
+        prio_distro_arch:
+            groovy:
+                ubuntu_distro: oneiric
+                arch: amd64
+        dependencies:
+            catkin:
+                type: git
+                url: git://github.com/ros/catkin.git
+                version: groovy-devel
+                private: false
+        jobs: []
