@@ -9,15 +9,15 @@ repositories:
         type : git
         url: git://github.com/ros/ros_tutorials.git
         version: groovy-devel
-        private: false
-        prio_distro_arch:
-            groovy:
-                ubuntu_distro: oneiric
-                arch: amd64
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
         dependencies:
             catkin:
                 type: git
                 url: git://github.com/ros/catkin.git
                 version: groovy-devel
-                private: false
+                poll: false
         jobs: []
