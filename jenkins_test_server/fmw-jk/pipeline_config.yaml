@@ -6,7 +6,7 @@ committer: 'false'
 
 repositories:
     ros_tutorials:
-        type : git
+        type: git
         url: git://github.com/ros/ros_tutorials.git
         version: groovy-devel
         poll: true
@@ -20,4 +20,26 @@ repositories:
                 url: git://github.com/ros/catkin.git
                 version: groovy-devel
                 poll: false
+        jobs: []
+    ros_comm:
+        type: git
+        url: git://github.com/ros/ros_comm.git
+        version: groovy-devel
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+    catkin:
+        type: git
+        url: git://github.com/ros/catkin.git
+        version: groovy-devel
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
         jobs: []
