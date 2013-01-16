@@ -13,7 +13,7 @@ repositories:
         ros_distro: [test_rosdistro, test_rosdistro_2]  # electric, fuerte,...
         prio_ubuntu_distro: oneiric
         prio_arch: amd64
-        matrix_ubuntu_arch:
+        matrix_distro_arch:
             oneiric: [i386]
             lucid: [amd64, i386]
         dependencies:
@@ -32,6 +32,6 @@ repositories:
         ros_distro: [test_rosdistro]
         prio_ubuntu_distro: natty
         prio_arch: amd64
-        matrix_ubuntu_arch:
+        matrix_distro_arch:
         dependencies:
         jobs: []
