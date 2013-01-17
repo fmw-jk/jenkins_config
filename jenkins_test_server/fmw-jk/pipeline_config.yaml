@@ -43,3 +43,14 @@ repositories:
         matrix_distro_arch:
         dependencies:
         jobs: []
+    cob_common:
+        type: git
+        url: git://github.com/ipa320/cob_common.git
+        version: mister
+        poll: true
+        ros_distro: [electric]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
