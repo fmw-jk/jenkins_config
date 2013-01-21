@@ -1,6 +1,6 @@
-pipeline_github_url: git@github.com/ipa320/jenkins_pipelines/jenkins_test_server/fmw-jk
+pipeline_github_url: git@github.com/ipa320/jenkins_pipelines/jenkins-test-server/fmw-jk
 user_name: fmw-jk
-server_name: jenkins_test_server
+server_name: jenkins-test-server
 email: jannik.kett@gmail.com
 committer: 'false'
 

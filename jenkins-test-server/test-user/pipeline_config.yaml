@@ -1,6 +1,6 @@
-pipeline_github_url: git@github.com/fmw-jk/jenkins_pipelines/jenkins_test_server/test_user  # git@github.com/ipa320/jenkins_pipelines/server_name/user_name
-user_name: test_user
-server_name: jenkins_test_server
+pipeline_github_url: git@github.com/fmw-jk/jenkins_pipelines/jenkins-test-server/test-user  # git@github.com/ipa320/jenkins_pipelines/server_name/user_name
+user_name: test-user
+server_name: jenkins-test-server
 email: test@ipa.fhg.de
 committer: 'false'
 
