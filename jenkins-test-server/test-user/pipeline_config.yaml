@@ -35,4 +35,19 @@ repositories:
         prio_arch: amd64
         matrix_distro_arch:
         dependencies:
+            dep_repo_1:
+                type: git  # git, hg, svn
+                url: git@github.com/user_x/dep_repo_1
+                version: master
+                poll: true
+            dep_repo_2:
+                type: git  # git, hg, svn
+                url: git@github.com/user_y/dep_repo_2
+                version: master
+                poll: true
+            dep_repo_3:
+                type: git  # git, hg, svn
+                url: git@github.com/user_y/dep_repo_3
+                version: master
+                poll: false
         jobs: []
