@@ -61,3 +61,27 @@ repositories:
                 version:
                 poll: true
         jobs: []
+
+    test_repo_3:
+        type: hg  # git, hg, svn
+        url: https://kforge.ros.org/test/test_repo_4
+        version: master
+        poll: true
+        ros_distro: [test_rosdistro]
+        prio_ubuntu_distro: natty
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+
+    test_repo_4:
+        type: svn  # git, hg, svn
+        url: https://code.test.org/svn/test/stacks/test_repo_4
+        version:
+        poll: true
+        ros_distro: [test_rosdistro]
+        prio_ubuntu_distro: natty
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
