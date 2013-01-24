@@ -64,7 +64,7 @@ repositories:
 
     test_repo_3:
         type: hg  # git, hg, svn
-        url: https://kforge.ros.org/test/test_repo_4
+        url: https://kforge.ros.org/test/test_repo_3
         version: master
         poll: true
         ros_distro: [test_rosdistro]
