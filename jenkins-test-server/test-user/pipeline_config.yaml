@@ -50,4 +50,14 @@ repositories:
                 url: git@github.com/user_y/dep_repo_3
                 version: master
                 poll: false
+            dep_repo_4:
+                type: hg  # git, hg, svn
+                url: https://kforge.ros.org/test/dep_repo_4
+                version: master
+                poll: true
+            dep_repo_5:
+                type: svn  # git, hg, svn
+                url: https://code.test.org/svn/test/stacks/dep_repo_5
+                version:
+                poll: true
         jobs: []
