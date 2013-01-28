@@ -23,7 +23,7 @@ repositories:
                 url: git@github.com/user_x/dep_repo_1
                 version: master
                 poll: true
-        jobs: [normal, sim, db, down, app, hw, release]
+        jobs: [normal, sim, db, down, app, bringup, highlevel, release]
 
     test_repo_2:
         type: git
