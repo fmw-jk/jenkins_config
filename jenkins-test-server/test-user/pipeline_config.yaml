@@ -71,6 +71,7 @@ repositories:
         prio_ubuntu_distro: natty
         prio_arch: amd64
         matrix_distro_arch:
+            lucid: [i386]
         dependencies:
         jobs: []
 
