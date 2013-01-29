@@ -26,7 +26,7 @@ repositories:
         prio_ubuntu_distro: oneiric
         prio_arch: i386
         matrix_distro_arch:
-            oneiric: [i386]
+            oneiric: [amd64]
         dependencies:
             catkin:
                 type: git
