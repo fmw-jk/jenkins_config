@@ -16,6 +16,17 @@ repositories:
         prio_arch: amd64
         matrix_distro_arch:
         dependencies:
+        jobs: []
+    ros_tutorials__catkin:
+        type: git
+        url: git://github.com/ros/ros_tutorials.git
+        version: groovy-devel
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
             catkin:
                 type: git
                 url: git://github.com/ros/catkin.git
