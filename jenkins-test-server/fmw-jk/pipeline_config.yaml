@@ -27,6 +27,7 @@ repositories:
         prio_arch: i386
         matrix_distro_arch:
             oneiric: [amd64]
+            lucid: [amd64, i386]
         dependencies:
             catkin:
                 type: git
