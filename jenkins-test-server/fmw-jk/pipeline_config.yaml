@@ -33,7 +33,7 @@ repositories:
                 url: git://github.com/ros/catkin.git
                 version: groovy-devel
                 poll: true
-        jobs: []
+        jobs: [normal, sim, db, down, app, bringup, highlevel, release]
     ros_comm:
         type: git
         url: git://github.com/ros/ros_comm.git
@@ -56,7 +56,7 @@ repositories:
         matrix_distro_arch:
             lucid: [i386]
         dependencies:
-        jobs: []
+        jobs: [normal]
     cob_common:
         type: git
         url: git://github.com/ipa320/cob_common.git

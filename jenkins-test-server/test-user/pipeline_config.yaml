@@ -73,7 +73,7 @@ repositories:
         matrix_distro_arch:
             lucid: [i386]
         dependencies:
-        jobs: []
+        jobs: [normal]
 
     test_repo_4:
         type: svn  # git, hg, svn
