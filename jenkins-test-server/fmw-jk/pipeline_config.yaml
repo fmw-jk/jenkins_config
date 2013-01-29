@@ -24,8 +24,9 @@ repositories:
         poll: true
         ros_distro: [groovy]
         prio_ubuntu_distro: oneiric
-        prio_arch: amd64
+        prio_arch: i386
         matrix_distro_arch:
+            oneiric: [i386]
         dependencies:
             catkin:
                 type: git
