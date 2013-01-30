@@ -11,7 +11,20 @@ repositories:
         url: git://github.com/ros/ros_tutorials.git
         version: groovy-devel
         poll: true
-        ros_distro: [groovy, fuerte]
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+            oneiric: [i386]
+            precise: [amd64, i386]
+        dependencies:
+        jobs: [normal, down, bringup, highlevel]
+    ros_tutorials__fuerte:
+        type: git
+        url: git://github.com/ros/ros_tutorials.git
+        version: fuerte-devel
+        poll: true
+        ros_distro: [fuerte]
         prio_ubuntu_distro: oneiric
         prio_arch: amd64
         matrix_distro_arch:
