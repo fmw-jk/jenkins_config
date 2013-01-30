@@ -19,24 +19,23 @@ repositories:
             precise: [amd64, i386]
         dependencies:
         jobs: [normal, down, bringup, highlevel]
-#    ros_tutorials__catkin:
-#        type: git
-#        url: git://github.com/ros/ros_tutorials.git
-#        version: groovy-devel
-#        poll: true
-#        ros_distro: [groovy]
-#        prio_ubuntu_distro: oneiric
-#        prio_arch: i386
-#        matrix_distro_arch:
-#            oneiric: [amd64]
-#            lucid: [amd64, i386]
-#        dependencies:
-#            catkin:
-#                type: git
-#                url: git://github.com/ros/catkin.git
-#                version: groovy-devel
-#                poll: true
-#        jobs: [normal, sim, db, app, bringup, highlevel, release]
+    ros_tutorials__catkin:
+        type: git
+        url: git://github.com/ros/ros_tutorials.git
+        version: groovy-devel
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: i386
+        matrix_distro_arch:
+            oneiric: [amd64]
+        dependencies:
+            catkin:
+                type: git
+                url: git://github.com/ros/catkin.git
+                version: groovy-devel
+                poll: true
+        jobs: [normal, down, sim, db, app]
 #    ros_comm:
 #        type: git
 #        url: git://github.com/ros/ros_comm.git
