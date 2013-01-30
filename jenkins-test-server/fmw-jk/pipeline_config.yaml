@@ -15,7 +15,6 @@ repositories:
         prio_ubuntu_distro: oneiric
         prio_arch: amd64
         matrix_distro_arch:
-            lucid: [amd64, i386]
             oneiric: [i386]
             precise: [amd64, i386]
         dependencies:
