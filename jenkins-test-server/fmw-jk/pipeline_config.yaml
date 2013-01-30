@@ -17,7 +17,7 @@ repositories:
         matrix_distro_arch:
             oneiric: [i386]
         dependencies:
-        jobs: [normal]
+        jobs: [normal, bringup, highlevel]
 #    ros_tutorials__catkin:
 #        type: git
 #        url: git://github.com/ros/ros_tutorials.git
