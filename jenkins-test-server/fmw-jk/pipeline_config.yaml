@@ -64,8 +64,9 @@ repositories:
         version: master
         poll: true
         ros_distro: [electric]
-        prio_ubuntu_distro: maverick
+        prio_ubuntu_distro: natty
         prio_arch: amd64
         matrix_distro_arch:
+            lucid: [amd64]
         dependencies:
         jobs: []
