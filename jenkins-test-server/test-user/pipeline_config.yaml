@@ -24,7 +24,7 @@ repositories:
                 version: master
                 poll: true
         jobs: [normal, sim, db, down, app, bringup, highlevel, release]
-        robots: []
+        robots: ['test_robot']
 
     test_repo_2:
         type: git
