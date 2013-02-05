@@ -19,6 +19,7 @@ repositories:
             precise: [amd64, i386]
         dependencies:
         jobs: [normal, down, bringup, highlevel]
+        robots: [cob3-3]
     ros_tutorials__catkin:
         type: git
         url: git://github.com/ros/ros_tutorials.git
@@ -36,6 +37,7 @@ repositories:
                 version: groovy-devel
                 poll: true
         jobs: [normal, down, sim, db, app]
+        robots: []
 #    ros_comm:
 #        type: git
 #        url: git://github.com/ros/ros_comm.git
@@ -47,6 +49,7 @@ repositories:
 #        matrix_distro_arch:
 #        dependencies:
 #        jobs: []
+#        robots: []
     catkin:
         type: git
         url: git://github.com/ros/catkin.git
@@ -58,6 +61,7 @@ repositories:
         matrix_distro_arch:
         dependencies:
         jobs: []
+        robots: []
     cob_common:
         type: git
         url: git://github.com/ipa320/cob_common.git
@@ -70,3 +74,4 @@ repositories:
             lucid: [amd64]
         dependencies:
         jobs: []
+        robots: []

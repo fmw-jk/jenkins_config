@@ -24,6 +24,7 @@ repositories:
                 version: master
                 poll: true
         jobs: [normal, sim, db, down, app, bringup, highlevel, release]
+        robots: []
 
     test_repo_2:
         type: git
@@ -61,6 +62,7 @@ repositories:
                 version:
                 poll: true
         jobs: []
+        robots: []
 
     test_repo_3:
         type: hg  # git, hg, svn
@@ -74,6 +76,7 @@ repositories:
             lucid: [i386]
         dependencies:
         jobs: [normal]
+        robots: []
 
     test_repo_4:
         type: svn  # git, hg, svn
@@ -86,3 +89,4 @@ repositories:
         matrix_distro_arch:
         dependencies:
         jobs: []
+        robots: []
