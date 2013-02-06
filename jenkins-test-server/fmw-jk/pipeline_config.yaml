@@ -38,10 +38,22 @@ repositories:
                 poll: true
         jobs: [normal, down, sim, db, app]
         robots: []
-    ros_tutorials__fuerte:
+    cob_common:
         type: git
-        url: git://github.com/ros/ros_tutorials.git
-        version: fuerte-devel
+        url: git://github.com/ipa320/cob_common.git
+        version: release_fuerte
+        poll: true
+        ros_distro: [fuerte]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+        robots: []
+    cob_driver:
+        type: git
+        url: git://github.com/ipa320/cob_driver.git
+        version: release_fuerte
         poll: true
         ros_distro: [fuerte]
         prio_ubuntu_distro: oneiric
