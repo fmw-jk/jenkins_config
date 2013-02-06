@@ -38,7 +38,7 @@ repositories:
                 poll: true
         jobs: [normal, down, sim, db, app]
         robots: []
-    cob_common:
+    cob_common__fuerte:
         type: git
         url: git://github.com/ipa320/cob_common.git
         version: release_fuerte
