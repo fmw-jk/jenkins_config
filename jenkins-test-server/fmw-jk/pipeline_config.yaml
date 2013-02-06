@@ -73,5 +73,5 @@ repositories:
         matrix_distro_arch:
             lucid: [amd64]
         dependencies:
-        jobs: []
+        jobs: [normal]
         robots: []
