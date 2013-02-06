@@ -38,7 +38,7 @@ repositories:
                 poll: true
         jobs: [normal, down, sim, db, app]
         robots: []
-    ros_tutorials_fuerte:
+    ros_tutorials__fuerte:
         type: git
         url: git://github.com/ros/ros_tutorials.git
         version: fuerte-devel
