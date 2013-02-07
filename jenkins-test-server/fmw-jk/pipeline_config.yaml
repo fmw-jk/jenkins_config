@@ -38,6 +38,18 @@ repositories:
                 poll: true
         jobs: [normal, down, sim, db, app]
         robots: []
+    cob_common__groovy:
+        type: git
+        url: git://github.com/ipa320/cob_common.git
+        version: groovy-rosbuild
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+        robots: []
     cob_common__fuerte:
         type: git
         url: git://github.com/ipa320/cob_common.git
@@ -86,16 +98,4 @@ repositories:
             lucid: [amd64]
         dependencies:
         jobs: [normal]
-        robots: []
-    ros_controllers:
-        type: git
-        url: git://github.com/willowgarage/ros_controllers.git
-        version: groovy
-        poll: true
-        ros_distro: [groovy]
-        prio_ubuntu_distro: oneiric
-        prio_arch: amd64
-        matrix_distro_arch:
-        dependencies:
-        jobs: []
         robots: []
