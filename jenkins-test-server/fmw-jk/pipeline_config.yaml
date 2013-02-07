@@ -118,7 +118,7 @@ repositories:
         robots: []
     baer_automation:
         type: git
-        url: git://github.com/ipa320/baer_automation.git
+        url: git@github.com:ipa320/baer_automation.git
         version: master
         poll: true
         ros_distro: [electric]
