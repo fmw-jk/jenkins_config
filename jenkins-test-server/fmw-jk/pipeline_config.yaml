@@ -87,3 +87,15 @@ repositories:
         dependencies:
         jobs: [normal]
         robots: []
+    ros_controllers:
+        type: git
+        url: git://github.com/willowgarage/ros_controllers.git
+        version: groovy
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+        robots: []
