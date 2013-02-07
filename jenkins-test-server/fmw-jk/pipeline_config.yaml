@@ -53,11 +53,6 @@ repositories:
                 url: git://github.com/ros/ros.git
                 version: groovy-devel
                 poll: false
-            ros_comm:
-                type: git
-                url: git://github.com/ros/ros_comm.git
-                version: groovy-devel
-                poll: false
         jobs: []
         robots: []
     cob_common__fuerte:
