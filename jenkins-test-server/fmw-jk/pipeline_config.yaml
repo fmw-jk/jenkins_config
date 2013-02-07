@@ -104,3 +104,27 @@ repositories:
         dependencies:
         jobs: [normal]
         robots: []
+    cob_environment_perception:
+        type: git
+        url: git://github.com/ipa320/cob_environment_perception.git
+        version: master
+        poll: true
+        ros_distro: [electric]
+        prio_ubuntu_distro: natty
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+        robots: []
+    baer_automation:
+        type: git
+        url: git://github.com/ipa320/baer_automation.git
+        version: master
+        poll: true
+        ros_distro: [electric]
+        prio_ubuntu_distro: natty
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+        robots: []
