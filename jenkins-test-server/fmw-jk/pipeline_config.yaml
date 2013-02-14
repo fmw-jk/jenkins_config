@@ -34,7 +34,7 @@ repositories:
                 url: git://github.com/ros/catkin.git
                 version: groovy-devel
                 poll: true
-        jobs: [normal, down, graphics_test, db, app]
+        jobs: [normal, down, graphics_test, nongraphics_test, app]
         robots: []
     cob_common__groovy:
         type: git
