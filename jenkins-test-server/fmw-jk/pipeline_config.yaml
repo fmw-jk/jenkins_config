@@ -1,5 +1,4 @@
 user_name: fmw-jk
-user_group: admin
 server_name: jenkins-test-server
 email: jannik.kett@gmail.com
 committer_email_enabled: false

@@ -1,5 +1,4 @@
 user_name: test-user
-user_group: test-group # admin, release, MA, student
 server_name: jenkins-test-server
 email: test@ipa.fhg.de
 committer_email_enabled: false
