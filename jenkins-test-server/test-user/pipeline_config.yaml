@@ -21,7 +21,7 @@ repositories:
                 url: git@github.com/user_x/dep_repo_1
                 version: master
                 poll: true
-        jobs: [normal, graphics_test, nongraphics_test, down, bringup, highlevel, release]
+        jobs: [normal, graphics_test, nongraphics_test, down, automatic_hw_test, interactive_hw_test, release]
         robots: ['test_robot']
 
     test_repo_2:
