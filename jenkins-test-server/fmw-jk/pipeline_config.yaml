@@ -16,7 +16,7 @@ repositories:
             oneiric: [i386]
             precise: [amd64, i386]
         dependencies:
-        jobs: [normal, down, hardware_build, automatic_hw_test, interactive_hw_test]
+        jobs: [normal, downstream_build, hardware_build, automatic_hw_test, interactive_hw_test]
         robots: [cob3-3]
     ros_tutorials__catkin:
         type: git
@@ -34,7 +34,7 @@ repositories:
                 url: git://github.com/ros/catkin.git
                 version: groovy-devel
                 poll: true
-        jobs: [normal, down, graphics_test, nongraphics_test]
+        jobs: [normal, downstream_build, graphics_test, nongraphics_test]
         robots: []
     cob_common__groovy:
         type: git
