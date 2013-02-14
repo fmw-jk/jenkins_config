@@ -16,7 +16,7 @@ repositories:
             oneiric: [i386]
             precise: [amd64, i386]
         dependencies:
-        jobs: [normal, down, automatic_hw_test, interactive_hw_test]
+        jobs: [normal, down, hardware_build, automatic_hw_test, interactive_hw_test]
         robots: [cob3-3]
     ros_tutorials__catkin:
         type: git
