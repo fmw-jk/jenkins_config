@@ -1,0 +1,90 @@
+user_name: test-user
+server_name: jenkins-test-server
+email: test@ipa.fhg.de
+committer_email_enabled: false
+
+repositories:
+    test_repo_1:
+        type: git  # git, hg, svn
+        url: git@github.com/user/repo1
+        version: master
+        poll: true  # for first level repos always true
+        ros_distro: [test_rosdistro, test_rosdistro_2]  # electric, fuerte,...
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+            oneiric: [i386]
+            lucid: [amd64, i386]
+        dependencies:
+            dep_repo_1:
+                type: git  # git, hg, svn
+                url: git@github.com/user_x/dep_repo_1
+                version: master
+                poll: true
+        jobs: [normal, graphics_test, nongraphics_test, downstream_build, hardware_build, automatic_hw_test, interactive_hw_test, release]
+        robots: ['test_robot']
+
+    test_repo_2:
+        type: git
+        url: git@github.com/user/repo2
+        version: test
+        poll: true
+        ros_distro: [test_rosdistro]
+        prio_ubuntu_distro: natty
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+            dep_repo_1:
+                type: git  # git, hg, svn
+                url: git@github.com/user_x/dep_repo_1
+                version: master
+                poll: true
+            dep_repo_2:
+                type: git  # git, hg, svn
+                url: git@github.com/user_y/dep_repo_2
+                version: master
+                poll: true
+            dep_repo_3:
+                type: git  # git, hg, svn
+                url: git@github.com/user_y/dep_repo_3
+                version: master
+                poll: false
+            dep_repo_4:
+                type: hg  # git, hg, svn
+                url: https://kforge.ros.org/test/dep_repo_4
+                version: master
+                poll: true
+            dep_repo_5:
+                type: svn  # git, hg, svn
+                url: https://code.test.org/svn/test/stacks/dep_repo_5
+                version:
+                poll: true
+        jobs: []
+        robots: []
+
+    test_repo_3:
+        type: hg  # git, hg, svn
+        url: https://kforge.ros.org/test/test_repo_3
+        version: master
+        poll: true
+        ros_distro: [test_rosdistro]
+        prio_ubuntu_distro: natty
+        prio_arch: amd64
+        matrix_distro_arch:
+            lucid: [i386]
+        dependencies:
+        jobs: [normal]
+        robots: []
+
+    test_repo_4:
+        type: svn  # git, hg, svn
+        url: https://code.test.org/svn/test/stacks/test_repo_4
+        version:
+        poll: true
+        ros_distro: [test_rosdistro]
+        prio_ubuntu_distro: natty
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+        robots: []
