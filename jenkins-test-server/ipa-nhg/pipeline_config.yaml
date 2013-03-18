@@ -16,3 +16,87 @@ repositories:
         dependencies:
         jobs: []
         robots: []
+    cob_common:
+        type: git
+        url: git@github.com:ipa-nhg/cob_common.git
+        version: groovy_dev
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+        robots: []
+    cob_driver:
+        type: git
+        url: git@github.com:ipa-nhg/cob_driver.git
+        version: groovy_dev
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+        robots: []
+    cob_robots:
+        type: git
+        url: git@github.com:ipa-nhg/cob_robots.git
+        version: groovy_dev
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+        robots: []
+    schunk_robots:
+        type: git
+        url: git@github.com:ipa-nhg/schunk_robots.git
+        version: groovy_dev
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+        robots: []
+    schunk_modular_robotics:
+        type: git
+        url: git@github.com:ipa-nhg/schunk_modular_robotics.git
+        version: groovy_dev
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+        robots: []
+    cob_simulation:
+        type: git
+        url: git@github.com:ipa-nhg/cob_simulation.git
+        version: groovy_dev
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+        robots: []
+    cob_command_tools:
+        type: git
+        url: git@github.com:ipa-nhg/cob_command_tools.git
+        version: groovy_dev
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+        robots: []
