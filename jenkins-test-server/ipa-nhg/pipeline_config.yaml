@@ -1,0 +1,18 @@
+user_name: ipa-nhg
+server_name: jenkins-test-server
+email: nhg@ipa.fhg.de
+committer_email_enabled: false
+
+repositories:
+    cob_extern:
+        type: git
+        url: git@github.com:ipa-nhg/cob_extern.git
+        version: groovy_dev
+        poll: true
+        ros_distro: [groovy]
+        prio_ubuntu_distro: oneiric
+        prio_arch: amd64
+        matrix_distro_arch:
+        dependencies:
+        jobs: []
+        robots: []
