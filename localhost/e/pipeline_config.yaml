@@ -9,7 +9,8 @@ repositories:
     dependencies:
       cob_bringup_overlays: {poll: true, type: git, url: 'git@github.com:cu-noyvirt/cob_bringup_overlays.git',
         version: master}
-      cob_karto: {poll: false, type: git, url: 'git@github.com:/cob_karto.git', version: master}
+      cob_karto: {poll: false, type: git, url: 'git@github.com:ipa-fmw/cob_karto.git',
+        version: master}
     matrix_distro_arch: {}
     prio_ubuntu_distro: maverick
     prio_arch: amd64
