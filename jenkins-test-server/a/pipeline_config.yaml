@@ -8,8 +8,8 @@ repositories:
     poll: true
     dependencies: {}
     matrix_distro_arch: {}
-    prio_ubuntu_distro: lucid
-    prio_arch: amd64
+    prio_ubuntu_distro: natty
+    prio_arch: i386
     type: git
     url: git@github.com:ipa320/cob_driver.git
     version: electric_dev
