@@ -15,5 +15,5 @@ repositories:
     type: git
     url: git@github.com:ipa-fmw/cob_common.git
     version: experimentation_days
-email: a@abc.de
+email: e@abc.de
 committer_email_enabled: true
