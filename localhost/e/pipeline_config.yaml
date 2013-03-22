@@ -10,10 +10,10 @@ repositories:
       cob_bringup_overlays: {poll: true, type: git, url: 'git@github.com:cu-noyvirt/cob_bringup_overlays.git',
         version: master}
     matrix_distro_arch: {}
-    prio_ubuntu_distro: maverick
+    prio_ubuntu_distro: oneiric
     prio_arch: amd64
     type: git
     url: git@github.com:ipa-fmw/cob_common.git
     version: experimentation_days
-email: oiakoicwksvcs
+email: a@abc.de
 committer_email_enabled: true
