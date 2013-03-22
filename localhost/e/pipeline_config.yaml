@@ -7,8 +7,8 @@ repositories:
     jobs: []
     poll: true
     dependencies:
-      cob_bringup_overlays: {poll: true, type: git, url: 'git@github.com:cu-noyvirt/cob_bringup_overlays.git',
-        version: master}
+      cob_bringup_overlays: {poll: true, type: git, url: 'git@github.com:ipa-nhg/cob_bringup_overlays.git',
+        version: electric_dev}
     matrix_distro_arch: {}
     prio_ubuntu_distro: oneiric
     prio_arch: amd64
