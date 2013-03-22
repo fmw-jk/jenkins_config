@@ -13,7 +13,7 @@ repositories:
     prio_ubuntu_distro: oneiric
     prio_arch: amd64
     type: git
-    url: git@github.com:ipa-fmw/cob_common.git
-    version: experimentation_days
+    url: git@github.com:ipa-taj-dm/cob_common.git
+    version: master
 email: e@abc.de
 committer_email_enabled: true
