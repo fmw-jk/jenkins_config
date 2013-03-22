@@ -1,0 +1,17 @@
+server_name: jenkins-test-server
+user_name: tester
+repositories:
+  cob_extern:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: natty
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_extern.git
+    version: master
+email: jannik.kett@gmail.com
+committer_email_enabled: true
