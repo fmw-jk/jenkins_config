@@ -14,6 +14,6 @@ repositories:
     prio_arch: amd64
     type: git
     url: git@github.com:ipa-fmw/cob_common.git
-    version: experimentation_days
+    version: master
 email: e@abc.de
 committer_email_enabled: true
