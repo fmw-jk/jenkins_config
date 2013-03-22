@@ -4,7 +4,7 @@ repositories:
   cob_extern:
     ros_distro: [electric]
     robots: []
-    jobs: []
+    jobs: [release]
     poll: true
     dependencies: {}
     matrix_distro_arch: {}
