@@ -1,0 +1,50 @@
+server_name: localhost
+user_name: a
+repositories:
+  cob_bringup_sandbox:
+    ros_distro: [groovy]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:fmw-jk/cob_bringup_sandbox.git
+    version: master
+  cob_manipulation_sandbox__iaeoeoaeoa:
+    ros_distro: [fuerte, groovy]
+    robots: [cob3-3, cob3-6]
+    jobs: [regular_build, downstream_build, hardware_build, automatic_hw_test, release]
+    poll: true
+    dependencies:
+      cob_karto: {poll: true, type: git, url: 'git@github.com:ipa-frm/cob_karto.git',
+        version: master}
+      cob_industrial: {poll: false, type: git, url: 'git@github.com:ipa320/cob_industrial.git',
+        version: master}
+    matrix_distro_arch:
+      natty: [i386]
+      oneiric: [amd64, i386]
+      raring: [i386]
+      maverick: [amd64]
+      quantal: [amd64]
+    prio_ubuntu_distro: precise
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_manipulation_sandbox.git
+    version: tutorials
+  cob_scenario_tools__suffix:
+    ros_distro: [electric, groovy]
+    robots: [cob3-6]
+    jobs: [hardware_build, release]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: lucid
+    prio_arch: i386
+    type: git
+    url: git@github.com:ipa320/cob_scenario_tools.git
+    version: master
+email: jannik.kett@gmail.com
+committer_email_enabled: true
