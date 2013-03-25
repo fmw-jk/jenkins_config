@@ -1,18 +1,6 @@
 server_name: localhost
 user_name: a
 repositories:
-  cob_bringup_sandbox:
-    ros_distro: [groovy]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: oneiric
-    prio_arch: amd64
-    type: git
-    url: git@github.com:fmw-jk/cob_bringup_sandbox.git
-    version: master
   cob_manipulation_sandbox__iaeoeoaeoa:
     ros_distro: [fuerte, groovy]
     robots: [cob3-3, cob3-6]
@@ -34,17 +22,5 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_manipulation_sandbox.git
     version: tutorials
-  cob_scenario_tools__suffix:
-    ros_distro: [electric, groovy]
-    robots: [cob3-6]
-    jobs: [hardware_build, release]
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: lucid
-    prio_arch: i386
-    type: git
-    url: git@github.com:ipa320/cob_scenario_tools.git
-    version: master
 email: jannik.kett@gmail.com
 committer_email_enabled: true
