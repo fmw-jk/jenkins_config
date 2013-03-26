@@ -13,5 +13,5 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_driver.git
     version: electric_dev
-email: enter your email address here
+email: jannik.kett@gmail.com
 committer_email_enabled: true
