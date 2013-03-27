@@ -1,7 +1,7 @@
 server_name: localhost
 user_name: a
 repositories:
-  cob_manipulation_sandbox__u:
+  cob_manipulation_sandbox__ueoiaeo:
     ros_distro: [fuerte, groovy]
     robots: [cob3-3, cob3-6]
     jobs: [regular_build, downstream_build, hardware_build, automatic_hw_test, release]
@@ -17,8 +17,8 @@ repositories:
       raring: [i386]
       maverick: [amd64]
       quantal: [amd64]
-    prio_ubuntu_distro: precise
-    prio_arch: i386
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
     type: git
     url: git@github.com:ipa-fmw/cob_manipulation_sandbox.git
     version: master
