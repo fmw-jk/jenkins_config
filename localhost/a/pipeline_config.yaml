@@ -22,5 +22,5 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_manipulation_sandbox.git
     version: tutorials
-email: jannik.kett@gmail.com
+email: kett@gmail.com
 committer_email_enabled: true
