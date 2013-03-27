@@ -18,9 +18,9 @@ repositories:
       maverick: [amd64]
       quantal: [amd64]
     prio_ubuntu_distro: oneiric
-    prio_arch: amd64
+    prio_arch: i386
     type: git
-    url: git@github.com:ipa-fmw/cob_manipulation_sandbox.git
+    url: git@github.com:ipa-mdl/cob_manipulation_sandbox.git
     version: master
 email: jannik.kett@gmail.com
 committer_email_enabled: true
