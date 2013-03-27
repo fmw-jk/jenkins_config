@@ -18,7 +18,7 @@ repositories:
       maverick: [amd64]
       quantal: [amd64]
     prio_ubuntu_distro: precise
-    prio_arch: amd64
+    prio_arch: i386
     type: git
     url: git@github.com:ipa-fmw/cob_manipulation_sandbox.git
     version: master
