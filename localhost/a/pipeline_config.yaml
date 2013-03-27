@@ -1,7 +1,7 @@
 server_name: localhost
 user_name: a
 repositories:
-  cob_manipulation_sandbox__iaeoeoaeoa:
+  cob_manipulation_sandbox__u:
     ros_distro: [fuerte, groovy]
     robots: [cob3-3, cob3-6]
     jobs: [regular_build, downstream_build, hardware_build, automatic_hw_test, release]
