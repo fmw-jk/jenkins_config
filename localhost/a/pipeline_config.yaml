@@ -1,6 +1,18 @@
 server_name: localhost
 user_name: a
 repositories:
+  cob_common:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: lucid
+    prio_arch: amd64
+    type: git
+    url: git@github.com:fmw-jk/cob_common.git
+    version: master
   cob_manipulation_sandbox__ueoiaeo:
     ros_distro: [fuerte, groovy]
     robots: [cob3-3, cob3-6]
