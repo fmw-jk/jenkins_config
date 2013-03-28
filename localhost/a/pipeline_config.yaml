@@ -7,8 +7,6 @@ repositories:
     jobs: [regular_build, downstream_build, hardware_build, automatic_hw_test, release]
     poll: true
     dependencies:
-      cob_karto: {poll: true, type: git, url: 'git@github.com:ipa-frm/cob_karto.git',
-        version: master}
       cob_industrial: {poll: false, type: git, url: 'git@github.com:ipa320/cob_industrial.git',
         version: master}
     matrix_distro_arch:
