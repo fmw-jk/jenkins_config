@@ -22,7 +22,7 @@ repositories:
                 version: electric_dev
                 poll: true
         jobs: [normal]
-        robots: ['cob3-3']
+        robots: []
 
     test_repo_2:
         type: git
