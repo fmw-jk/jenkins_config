@@ -27,7 +27,7 @@ repositories:
     test_repo_2:
         type: git
         url: git@github.com/ipa-fmw/cob_common
-        version: test
+        version: fuerte_dev
         poll: true
         ros_distro: [fuerte]
         prio_ubuntu_distro: precise
