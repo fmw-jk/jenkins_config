@@ -1,36 +1,17 @@
 server_name: localhost
 user_name: a
 repositories:
-  cob_perception_data__eaeueoiaeo:
-    ros_distro: [fuerte, groovy]
-    robots: [cob3-3, cob3-6]
-    jobs: [regular_build, downstream_build, hardware_build, automatic_hw_test, release]
-    poll: true
-    dependencies:
-      cob_industrial: {poll: false, type: git, url: 'git@github.com:fmw-jk/cob_industrial.git',
-        version: master}
-    matrix_distro_arch:
-      natty: [i386]
-      oneiric: [amd64, i386]
-      raring: [i386]
-      maverick: [amd64]
-      quantal: [amd64]
-    prio_ubuntu_distro: oneiric
-    prio_arch: i386
-    type: git
-    url: git@github.com:ipa-mdl/cob_perception_data.git
-    version: master
-  cob_common:
-    ros_distro: []
+  cob_common__suffix:
+    ros_distro: [fuerte]
     robots: []
     jobs: []
     poll: true
     dependencies: {}
     matrix_distro_arch: {}
     prio_ubuntu_distro: lucid
-    prio_arch: amd64
+    prio_arch: i386
     type: git
-    url: git@github.com:/cob_common.git
+    url: git@github.com:fmw-jk/cob_common.git
     version: master
 email: jannik.kett@gmail.com
 committer_email_enabled: true
