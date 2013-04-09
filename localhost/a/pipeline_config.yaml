@@ -6,7 +6,9 @@ repositories:
     robots: []
     jobs: [regular_build, downstream_build, nongraphics_test, graphics_test, hardware_build]
     poll: true
-    dependencies: {}
+    dependencies:
+      cob_common: {poll: false, type: git, url: 'git@github.com:fmw-jk/cob_common.git',
+        version: catkin}
     matrix_distro_arch:
       oneiric: [amd64]
       lucid: [amd64]
@@ -14,7 +16,7 @@ repositories:
     prio_ubuntu_distro: precise
     prio_arch: amd64
     type: git
-    url: git@github.com:/cob_c.git
+    url: git@github.com:fmw-jk/cob_c.git
     version: master
 email: jannik.kett@gmail.com
-committer_email_enabled: true
+committer_email_enabled: false
