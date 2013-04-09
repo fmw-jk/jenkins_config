@@ -1,17 +1,34 @@
 server_name: localhost
 user_name: a
 repositories:
-  cob_common__suffix:
-    ros_distro: [fuerte]
+  cob_common__dev:
+    ros_distro: [groovy]
+    robots: []
+    jobs: [regular_build, downstream_build, nongraphics_test, graphics_test, hardware_build]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch:
+      oneiric: [amd64]
+      lucid: [amd64]
+      maverick: [i386]
+    prio_ubuntu_distro: precise
+    prio_arch: amd64
+    type: git
+    url: git@github.com:/cob_common.git
+    version: master
+  cob_common:
+    ros_distro: [electric]
     robots: []
     jobs: []
     poll: true
-    dependencies: {}
+    dependencies:
+      cob_extern: {poll: false, type: git, url: 'git@github.com:/cob_extern.git',
+        version: master}
     matrix_distro_arch: {}
     prio_ubuntu_distro: lucid
-    prio_arch: i386
+    prio_arch: amd64
     type: git
-    url: git@github.com:fmw-jk/cob_common.git
+    url: git@github.com:/cob_common.git
     version: master
 email: jannik.kett@gmail.com
 committer_email_enabled: true
