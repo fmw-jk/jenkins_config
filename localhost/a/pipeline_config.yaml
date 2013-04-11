@@ -1,22 +1,33 @@
 server_name: localhost
 user_name: a
 repositories:
-  cob_c__dev:
-    ros_distro: [groovy]
+  ? ''
+  : ros_distro: [fuerte]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: lucid
+    prio_arch: amd64
+    type: git
+    url: git@github.com:fmw-jk/.git
+    version: master
+  __dev:
+    ros_distro: [electric]
     robots: []
     jobs: [regular_build, downstream_build, nongraphics_test, graphics_test, hardware_build]
     poll: true
     dependencies:
-      cob_common: {poll: false, type: git, url: 'git@github.com:fmw-jk/cob_common.git',
-        version: catkin}
+      ? ''
+      : {poll: false, type: git, url: 'git@github.com:fmw-jk/.git', version: catkin}
     matrix_distro_arch:
-      oneiric: [amd64]
-      lucid: [amd64]
-      maverick: [i386]
-    prio_ubuntu_distro: precise
+      natty: [i386]
+      lucid: [amd64, i386]
+    prio_ubuntu_distro: oneiric
     prio_arch: amd64
     type: git
-    url: git@github.com:fmw-jk/cob_c.git
+    url: git@github.com:fmw-jk/.git
     version: master
 email: jannik.kett@gmail.com
-committer_email_enabled: false
+committer_email_enabled: true
