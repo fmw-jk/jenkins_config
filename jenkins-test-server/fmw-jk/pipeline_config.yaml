@@ -1,20 +1,20 @@
 server_name: jenkins-test-server
 user_name: fmw-jk
 repositories:
-  cob_navigation__abc:
-    ros_distro: [fuerte]
+  cob_driver__abc:
+    ros_distro: [electric]
     robots: []
     jobs: [regular_build]
     poll: true
     dependencies:
       cob_common: {poll: false, type: git, url: 'git@github.com:ipa320/cob_common.git',
-        version: master}
+        version: electric}
     matrix_distro_arch:
-      lucid: [amd64]
-    prio_ubuntu_distro: oneiric
+      natty: [i386]
+    prio_ubuntu_distro: natty
     prio_arch: amd64
     type: git
-    url: git@github.com:ipa320/cob_navigation.git
-    version: electric
+    url: git@github.com:/cob_driver.git
+    version: master
 email: jannik.kett@gmail.com
 committer_email_enabled: false
