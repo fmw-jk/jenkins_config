@@ -4,7 +4,7 @@ repositories:
   cob_driver__abc:
     ros_distro: [electric]
     robots: []
-    jobs: [regular_build]
+    jobs: [regular_build, hardware_build]
     poll: true
     dependencies:
       cob_common: {poll: false, type: git, url: 'git@github.com:ipa320/cob_common.git',
