@@ -11,7 +11,7 @@ repositories:
         version: master}
     matrix_distro_arch:
       natty: [i386]
-    prio_ubuntu_distro: lucid
+    prio_ubuntu_distro: oneiric
     prio_arch: amd64
     type: git
     url: git@github.com:fmw-jk/cob_driver.git
