@@ -7,11 +7,11 @@ repositories:
     jobs: [regular_build, hardware_build]
     poll: true
     dependencies:
-      cob_common: {poll: false, type: git, url: 'git@github.com:ipa320/cob_common.git',
-        version: electric}
+      cob_common: {poll: false, type: git, url: 'git@github.com:/cob_common.git',
+        version: master}
     matrix_distro_arch:
       natty: [i386]
-    prio_ubuntu_distro: natty
+    prio_ubuntu_distro: lucid
     prio_arch: amd64
     type: git
     url: git@github.com:fmw-jk/cob_driver.git
