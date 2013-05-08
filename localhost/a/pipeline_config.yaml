@@ -1,29 +1,19 @@
 server_name: localhost
 user_name: a
 repositories:
-  cob_canopen:
-    ros_distro: []
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: ROS Release wählen
-    prio_arch: amd64
-    type: git
-    url: git@github.com:fmw-jk/cob_canopen.git
-    version: master
-  cob_canopen__dev:
+  cob_driver__dev:
     ros_distro: [electric]
     robots: []
     jobs: []
     poll: true
-    dependencies: {}
+    dependencies:
+      cob_common: {poll: false, type: git, url: 'git@github.com:fmw-jk/cob_common.git',
+        version: master}
     matrix_distro_arch: {}
     prio_ubuntu_distro: oneiric
     prio_arch: amd64
     type: git
-    url: git@github.com:fmw-jk/cob_canopen.git
+    url: git@github.com:fmw-jk/cob_driver.git
     version: master
 email: jannik.kett@gmail.com
 committer_email_enabled: false
