@@ -1,5 +1,5 @@
-server_name: null
-user_name: null
+server_name: jenkins-test-server
+user_name: fmw-jk
 repositories:
   cob_extern:
     ros_distro: [electric]
