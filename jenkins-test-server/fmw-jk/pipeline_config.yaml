@@ -1,20 +1,17 @@
-server_name: jenkins-test-server
-user_name: fmw-jk
+server_name: null
+user_name: null
 repositories:
-  cob_driver__abc:
+  cob_extern:
     ros_distro: [electric]
     robots: []
-    jobs: [regular_build, hardware_build]
+    jobs: []
     poll: true
-    dependencies:
-      cob_extern: {poll: true, type: git, url: 'git@github.com:fmw-jk/cob_extern.git',
-        version: master}
-    matrix_distro_arch:
-      natty: [i386]
-    prio_ubuntu_distro: oneiric
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: lucid
     prio_arch: amd64
     type: git
-    url: git@github.com:fmw-jk/cob_driver.git
-    version: master
+    url: git@github.com:fmw-jk/cob_extern.git
+    version: electric
 email: jannik.kett@gmail.com
 committer_email_enabled: false
