@@ -4,11 +4,11 @@ repositories:
   cob_extern:
     ros_distro: [electric]
     robots: []
-    jobs: []
+    jobs: [regular_build]
     poll: true
     dependencies: {}
     matrix_distro_arch: {}
-    prio_ubuntu_distro: lucid
+    prio_ubuntu_distro: maverick
     prio_arch: amd64
     type: git
     url: git@github.com:fmw-jk/cob_extern.git
