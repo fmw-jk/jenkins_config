@@ -25,6 +25,6 @@ repositories:
     prio_arch: amd64
     type: git
     url: git@github.com:ipa320/cob_extern.git
-    version: fuerte
+    version: fuerte_release_candidate
 email: jannik.kett@gmail.com
 committer_email_enabled: false
