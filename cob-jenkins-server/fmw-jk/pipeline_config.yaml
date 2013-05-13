@@ -14,17 +14,17 @@ repositories:
     url: git@github.com:fmw-jk/cob_common.git
     version: master
   cob_extern:
-    ros_distro: [fuerte]
+    ros_distro: [electric]
     robots: []
     jobs: [regular_build]
     poll: true
     dependencies: {}
     matrix_distro_arch:
-      oneiric: [i386]
-    prio_ubuntu_distro: oneiric
+      natty: [i386]
+    prio_ubuntu_distro: natty
     prio_arch: amd64
     type: git
     url: git@github.com:ipa320/cob_extern.git
-    version: fuerte_release_candidate
+    version: electric
 email: jannik.kett@gmail.com
 committer_email_enabled: false
