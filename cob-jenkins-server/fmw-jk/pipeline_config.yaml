@@ -13,6 +13,18 @@ repositories:
     type: git
     url: git@github.com:fmw-jk/cob_common.git
     version: master
+  cob_navigation:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: maverick
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_navigation.git
+    version: electric
   cob_extern__groovy:
     ros_distro: [groovy]
     robots: []
