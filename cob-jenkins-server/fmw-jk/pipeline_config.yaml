@@ -13,6 +13,18 @@ repositories:
     type: git
     url: git@github.com:fmw-jk/cob_common.git
     version: master
+  cob_driver__fuerte:
+    ros_distro: [fuerte]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_driver.git
+    version: fuerte
   ros_tutorials:
     ros_distro: [groovy]
     robots: []
