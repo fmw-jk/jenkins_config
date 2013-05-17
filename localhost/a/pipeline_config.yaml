@@ -1,7 +1,7 @@
 server_name: localhost
 user_name: a
 repositories:
-  cob_driver__dev:
+  cob_drive__dev:
     ros_distro: [electric]
     robots: []
     jobs: []
@@ -13,7 +13,7 @@ repositories:
     prio_ubuntu_distro: oneiric
     prio_arch: amd64
     type: git
-    url: git@github.com:fmw-jk/cob_driver.git
+    url: git@github.com:fmw-jk/cob_drive.git
     version: master
 email: jannik.kett@gmail.com
 committer_email_enabled: false
