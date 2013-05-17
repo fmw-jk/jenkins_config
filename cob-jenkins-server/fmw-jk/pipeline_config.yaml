@@ -9,7 +9,7 @@ repositories:
     dependencies: {}
     matrix_distro_arch: {}
     prio_ubuntu_distro: natty
-    prio_arch: amd64
+    prio_arch: i386
     type: git
     url: git@github.com:fmw-jk/cob_common.git
     version: master
