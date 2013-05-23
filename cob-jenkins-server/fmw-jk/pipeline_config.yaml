@@ -1,6 +1,79 @@
 server_name: cob-jenkins-server
 user_name: fmw-jk
 repositories:
+  cob_driver__fuerte:
+    ros_distro: [fuerte]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_driver.git
+    version: fuerte
+  cob_object_perception:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: natty
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_object_perception.git
+    version: electric
+  cob_navigation:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_navigation.git
+    version: electric
+  cob_people_perception:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_people_perception.git
+    version: electric
+  cob_driver:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_driver.git
+    version: electric
+  cob_extern:
+    ros_distro: [electric]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch:
+      natty: [i386]
+    prio_ubuntu_distro: natty
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_extern.git
+    version: electric
   cob_common__suffix:
     ros_distro: [electric]
     robots: []
@@ -25,41 +98,17 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_navigation.git
     version: fuerte
-  cob_driver__fuerte:
-    ros_distro: [fuerte]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: oneiric
-    prio_arch: amd64
-    type: git
-    url: git@github.com:ipa320/cob_driver.git
-    version: fuerte
-  ros_tutorials:
-    ros_distro: [groovy]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: oneiric
-    prio_arch: amd64
-    type: git
-    url: git@github.com:ros/ros_tutorials.git
-    version: groovy-devel
-  cob_navigation:
+  cob_manipulation:
     ros_distro: [electric]
     robots: []
     jobs: []
     poll: true
     dependencies: {}
     matrix_distro_arch: {}
-    prio_ubuntu_distro: oneiric
+    prio_ubuntu_distro: natty
     prio_arch: amd64
     type: git
-    url: git@github.com:ipa320/cob_navigation.git
+    url: git@github.com:ipa320/cob_manipulation.git
     version: electric
   cob_extern__groovy:
     ros_distro: [groovy]
@@ -73,19 +122,7 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_extern.git
     version: groovy_dev
-  cob_driver:
-    ros_distro: [electric]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: oneiric
-    prio_arch: amd64
-    type: git
-    url: git@github.com:ipa320/cob_driver.git
-    version: electric
-  cob_extern:
+  cob_simulation:
     ros_distro: [electric]
     robots: []
     jobs: []
@@ -95,7 +132,31 @@ repositories:
     prio_ubuntu_distro: natty
     prio_arch: amd64
     type: git
-    url: git@github.com:ipa320/cob_extern.git
+    url: git@github.com:ipa320/cob_simulation.git
+    version: electric
+  ros_tutorials:
+    ros_distro: [groovy]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ros/ros_tutorials.git
+    version: groovy-devel
+  cob_robots:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: natty
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_robots.git
     version: electric
 email: jannik.kett@gmail.com
 committer_email_enabled: false
