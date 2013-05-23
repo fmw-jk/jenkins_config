@@ -2,7 +2,7 @@ server_name: cob-jenkins-server
 user_name: fmw-ta
 repositories:
   cob_driver:
-    ros_distro: [groovy]
+    ros_distro: [electric, fuerte, groovy]
     robots: []
     jobs: []
     poll: true
