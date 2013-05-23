@@ -182,6 +182,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_simulation.git
     version: electric
+  cob_calibration:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: i386
+    type: git
+    url: git@github.com:ipa320/cob_calibration.git
+    version: electric_release_candidate
   cob_simulation__lucid_32:
     ros_distro: [electric]
     robots: []
