@@ -97,6 +97,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_driver.git
     version: electric
+  cob_common:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: natty
+    prio_arch: i386
+    type: git
+    url: git@github.com:fmw-jk/cob_common.git
+    version: master
   cob_extern:
     ros_distro: [electric]
     robots: []
@@ -110,18 +122,6 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_extern.git
     version: electric
-  cob_common__suffix:
-    ros_distro: [electric]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: natty
-    prio_arch: i386
-    type: git
-    url: git@github.com:fmw-jk/cob_common.git
-    version: master
   cob_navigation__fuerte:
     ros_distro: [fuerte]
     robots: []
@@ -179,6 +179,18 @@ repositories:
     matrix_distro_arch: {}
     prio_ubuntu_distro: natty
     prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_simulation.git
+    version: electric
+  cob_simulation__lucid_32:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: lucid
+    prio_arch: i386
     type: git
     url: git@github.com:ipa320/cob_simulation.git
     version: electric
