@@ -1,0 +1,17 @@
+server_name: cob-jenkins-server
+user_name: uhr-se
+repositories:
+  cob_simulation:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: i386
+    type: git
+    url: git@github.com:ipa320/cob_simulation.git
+    version: electric_dev
+email: uhr-se@ipa.fhg.de
+committer_email_enabled: false
