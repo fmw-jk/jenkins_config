@@ -13,5 +13,5 @@ repositories:
     type: git
     url: git@github.com:thiagodefreitas/cob_driver.git
     version: groovy_dev
-email: thiagodefreitas@gmail.com
+email: thiago.de.freitas.oliveira.araujo@ipa.fraunhofer.de
 committer_email_enabled: false
