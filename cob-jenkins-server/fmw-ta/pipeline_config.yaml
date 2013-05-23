@@ -1,6 +1,18 @@
 server_name: cob-jenkins-server
 user_name: fmw-ta
 repositories:
+  cob_navigation:
+    ros_distro: [electric, fuerte]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: lucid
+    prio_arch: amd64
+    type: git
+    url: git@github.com:thiagodefreitas/cob_navigation.git
+    version: master
   cob_driver:
     ros_distro: [electric, fuerte, groovy]
     robots: []
