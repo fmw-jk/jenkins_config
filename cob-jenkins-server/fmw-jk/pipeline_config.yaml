@@ -115,8 +115,7 @@ repositories:
     jobs: [regular_build]
     poll: true
     dependencies: {}
-    matrix_distro_arch:
-      natty: [i386]
+    matrix_distro_arch: {}
     prio_ubuntu_distro: natty
     prio_arch: amd64
     type: git
