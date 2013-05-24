@@ -1,7 +1,7 @@
 server_name: cob-jenkins-server
 user_name: nhg
 repositories:
-  cob_calibration_data:
+  cob_extern:
     ros_distro: [groovy]
     robots: []
     jobs: []
@@ -11,7 +11,7 @@ repositories:
     prio_ubuntu_distro: precise
     prio_arch: amd64
     type: git
-    url: git@github.com:ipa-nhg/cob_calibration_data.git
+    url: git@github.com:ipa-nhg/cob_extern.git
     version: groovy_dev
 email: nadia.hammoude.garcia@ipa.fraunhofer.de
 committer_email_enabled: false
