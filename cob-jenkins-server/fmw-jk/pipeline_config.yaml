@@ -206,6 +206,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_simulation.git
     version: electric
+  cob_command_tools:
+    ros_distro: [fuerte]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_command_tools.git
+    version: fuerte_release_candidate
   cob_calibration__32:
     ros_distro: [electric]
     robots: []
