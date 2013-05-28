@@ -170,6 +170,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_manipulation.git
     version: electric
+  cob_environment_perception__fuerte:
+    ros_distro: [fuerte]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_environment_perception.git
+    version: fuerte_release_candidate
   ros_tutorials:
     ros_distro: [groovy]
     robots: []
@@ -230,6 +242,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_calibration.git
     version: electric_release_candidate
+  schunk_modular_robotics:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: natty
+    prio_arch: i386
+    type: git
+    url: git@github.com:ipa320/schunk_modular_robotics.git
+    version: electric_dev
   cob_simulation__lucid_32:
     ros_distro: [electric]
     robots: []
@@ -253,6 +277,18 @@ repositories:
     prio_arch: amd64
     type: git
     url: git@github.com:ipa320/cob_robots.git
+    version: electric
+  cob_environment_perception:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: natty
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_environment_perception.git
     version: electric
 email: jannik.kett@gmail.com
 committer_email_enabled: false
