@@ -1,0 +1,17 @@
+server_name: cob-jenkins-server
+user_name: goa
+repositories:
+  cob_environment_perception:
+    ros_distro: [electric, fuerte, groovy]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-goa/cob_environment_perception.git
+    version: master
+email: goa@ipa.fhg.de
+committer_email_enabled: false
