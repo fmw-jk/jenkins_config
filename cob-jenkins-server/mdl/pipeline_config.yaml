@@ -1,0 +1,20 @@
+server_name: cob-jenkins-server
+user_name: mdl
+repositories:
+  cob_manipulation:
+    ros_distro: [groovy]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch:
+      oneiric: [amd64, i386]
+      quantal: [i386]
+      precise: [amd64, i386]
+    prio_ubuntu_distro: quantal
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-mdl/cob_manipulation.git
+    version: groovy
+email: mathias.luedtke@ipa.fraunhofer.de
+committer_email_enabled: false
