@@ -4,13 +4,10 @@ repositories:
   cob_manipulation:
     ros_distro: [groovy]
     robots: []
-    jobs: [regular_build]
+    jobs: []
     poll: true
     dependencies: {}
-    matrix_distro_arch:
-      oneiric: [amd64, i386]
-      quantal: [i386]
-      precise: [amd64, i386]
+    matrix_distro_arch: {}
     prio_ubuntu_distro: quantal
     prio_arch: amd64
     type: git
