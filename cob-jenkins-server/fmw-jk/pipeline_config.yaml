@@ -67,8 +67,8 @@ repositories:
     jobs: []
     poll: true
     dependencies:
-      cob_manipulation: {poll: false, type: git, url: 'git@github.com:ipa320/cob_manipulation.git',
-        version: electric}
+      cob_manipulation_sandbox: {poll: false, type: git, url: 'git@github.com:ipa320/cob_manipulation_sandbox.git',
+        version: master}
       cob_scenario_states: {poll: false, type: git, url: 'git@github.com:ipa320/cob_scenario_states.git',
         version: master}
     matrix_distro_arch: {}
