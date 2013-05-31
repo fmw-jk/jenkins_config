@@ -274,6 +274,18 @@ repositories:
     type: git
     url: git@github.com:fmw-jk/cob_common.git
     version: master
+  cob_industrial:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: natty
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_industrial.git
+    version: master
   cob_simulation:
     ros_distro: [electric]
     robots: []
