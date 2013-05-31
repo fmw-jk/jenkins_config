@@ -49,6 +49,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_driver.git
     version: electric
+  cob_object_manipulation:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: natty
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_object_manipulation.git
+    version: master
   cob_environments:
     ros_distro: [electric]
     robots: []
@@ -133,6 +145,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/schunk_modular_robotics.git
     version: electric_dev
+  cob_scenario_tools:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: natty
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_scenario_tools.git
+    version: master
   cob_simulation__lucid_32:
     ros_distro: [electric]
     robots: []
