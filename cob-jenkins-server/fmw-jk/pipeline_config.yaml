@@ -54,7 +54,9 @@ repositories:
     robots: []
     jobs: []
     poll: true
-    dependencies: {}
+    dependencies:
+      cob_manipulation: {poll: false, type: git, url: 'git@github.com:ipa320/cob_manipulation.git',
+        version: electric}
     matrix_distro_arch: {}
     prio_ubuntu_distro: natty
     prio_arch: amd64
