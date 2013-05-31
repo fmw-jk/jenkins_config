@@ -388,6 +388,18 @@ repositories:
     type: git
     url: git@github.com:ros/ros_tutorials.git
     version: groovy-devel
+  seneka:
+    ros_distro: [fuerte]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-mig/seneka.git
+    version: master
   cob_calibration__32:
     ros_distro: [electric]
     robots: []
@@ -395,7 +407,7 @@ repositories:
     poll: true
     dependencies: {}
     matrix_distro_arch: {}
-    prio_ubuntu_distro: natty
+    prio_ubuntu_distro: oneiric
     prio_arch: i386
     type: git
     url: git@github.com:ipa320/cob_calibration.git
@@ -412,6 +424,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_command_tools.git
     version: fuerte_release_candidate
+  cob_calibration:
+    ros_distro: [fuerte]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_calibration.git
+    version: fuerte_dev
   cob_robots:
     ros_distro: [electric]
     robots: []
