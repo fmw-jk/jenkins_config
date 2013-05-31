@@ -1,18 +1,6 @@
 server_name: cob-jenkins-server
 user_name: fmw-jk
 repositories:
-  pr2_navigation:
-    ros_distro: [electric]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: natty
-    prio_arch: amd64
-    type: git
-    url: git@github.com:ros-planning/pr2_navigation.git
-    version: master
   cob_driver__fuerte:
     ros_distro: [fuerte]
     robots: []
@@ -49,6 +37,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_navigation.git
     version: electric
+  navigation_experimental:
+    ros_distro: [groovy]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ros-planning/navigation_experimental.git
+    version: groovy-devel
   ros_comm:
     ros_distro: [groovy]
     robots: []
@@ -99,6 +99,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_environments.git
     version: electric
+  geometric_shapes:
+    ros_distro: [groovy]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ros-planning/geometric_shapes.git
+    version: groovy-devel
   cob_environments__fuerte_rc:
     ros_distro: [fuerte]
     robots: []
