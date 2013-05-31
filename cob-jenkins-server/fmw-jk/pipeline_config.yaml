@@ -183,6 +183,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_environment_perception.git
     version: fuerte_release_candidate
+  cob_simulation__oneiric_64:
+    ros_distro: [fuerte]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_simulation.git
+    version: fuerte
   schunk_modular_robotics:
     ros_distro: [electric]
     robots: []
@@ -207,18 +219,6 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_scenario_tools.git
     version: master
-  cob_simulation__lucid_32:
-    ros_distro: [electric]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: lucid
-    prio_arch: i386
-    type: git
-    url: git@github.com:ipa320/cob_simulation.git
-    version: electric
   schunk_robots:
     ros_distro: [electric]
     robots: []
@@ -371,7 +371,7 @@ repositories:
     poll: true
     dependencies: {}
     matrix_distro_arch: {}
-    prio_ubuntu_distro: natty
+    prio_ubuntu_distro: oneiric
     prio_arch: amd64
     type: git
     url: git@github.com:ipa320/cob_simulation.git
