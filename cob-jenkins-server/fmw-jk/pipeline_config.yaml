@@ -161,6 +161,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_simulation.git
     version: electric
+  ipa_canopen:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: natty
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/ipa_canopen.git
+    version: electric_dev
   cob_environment_perception:
     ros_distro: [electric]
     robots: []
