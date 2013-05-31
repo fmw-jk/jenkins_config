@@ -56,7 +56,7 @@ repositories:
     poll: true
     dependencies:
       actionlib: {poll: false, type: git, url: 'git@github.com:ros/actionlib.git',
-        version: common-1.2}
+        version: electric-devel}
     matrix_distro_arch: {}
     prio_ubuntu_distro: natty
     prio_arch: amd64
