@@ -61,6 +61,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_environments.git
     version: electric
+  cob_tutorials:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: natty
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_tutorials.git
+    version: electric_dev
   cob_environments__fuerte_rc:
     ros_distro: [fuerte]
     robots: []
@@ -145,18 +157,6 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_simulation.git
     version: electric
-  srs_public:
-    ros_distro: [electric]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: natty
-    prio_arch: amd64
-    type: git
-    url: git@github.com:ipa320/srs_public.git
-    version: master
   cob_environment_perception:
     ros_distro: [electric]
     robots: []
@@ -169,6 +169,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_environment_perception.git
     version: electric
+  autopnp:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: natty
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/autopnp.git
+    version: master
   cob_people_perception__goa-tz:
     ros_distro: [fuerte]
     robots: []
@@ -181,18 +193,6 @@ repositories:
     type: git
     url: git@github.com:ipa-goa-tz/cob_people_perception.git
     version: experimental_fuerte
-  ipa_lcrob:
-    ros_distro: [electric]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: natty
-    prio_arch: amd64
-    type: git
-    url: git@github.com:ipa320/ipa_lcrob.git
-    version: master
   cob_object_perception:
     ros_distro: [electric]
     robots: []
