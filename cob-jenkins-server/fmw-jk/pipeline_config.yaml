@@ -37,6 +37,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_navigation.git
     version: electric
+  ros_comm:
+    ros_distro: [groovy]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ros/ros_comm.git
+    version: groovy-devel
   cob_driver:
     ros_distro: [electric]
     robots: []
