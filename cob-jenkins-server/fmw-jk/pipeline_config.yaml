@@ -61,22 +61,6 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_environments.git
     version: electric
-  cob_tutorials:
-    ros_distro: [electric]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies:
-      cob_manipulation_sandbox: {poll: false, type: git, url: 'git@github.com:ipa320/cob_manipulation_sandbox.git',
-        version: master}
-      cob_scenario_states: {poll: false, type: git, url: 'git@github.com:ipa320/cob_scenario_states.git',
-        version: master}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: natty
-    prio_arch: amd64
-    type: git
-    url: git@github.com:ipa320/cob_tutorials.git
-    version: electric_dev
   cob_environments__fuerte_rc:
     ros_distro: [fuerte]
     robots: []
@@ -161,6 +145,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_simulation.git
     version: electric
+  schunk_robots:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: natty
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/schunk_robots.git
+    version: electric
   ipa_canopen:
     ros_distro: [electric]
     robots: []
@@ -185,22 +181,6 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_environment_perception.git
     version: electric
-  autopnp:
-    ros_distro: [electric]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies:
-      cob_manipulation_sandbox: {poll: false, type: git, url: 'git@github.com:ipa320/cob_manipulation_sandbox.git',
-        version: master}
-      cob_scenario_states: {poll: false, type: git, url: 'git@github.com:ipa320/cob_scenario_states.git',
-        version: master}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: natty
-    prio_arch: amd64
-    type: git
-    url: git@github.com:ipa320/autopnp.git
-    version: master
   cob_people_perception__goa-tz:
     ros_distro: [fuerte]
     robots: []
