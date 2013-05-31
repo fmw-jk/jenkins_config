@@ -174,7 +174,9 @@ repositories:
     robots: []
     jobs: []
     poll: true
-    dependencies: {}
+    dependencies:
+      cob_scenario_states: {poll: false, type: git, url: 'git@github.com:ipa320/cob_scenario_states.git',
+        version: master}
     matrix_distro_arch: {}
     prio_ubuntu_distro: natty
     prio_arch: amd64
