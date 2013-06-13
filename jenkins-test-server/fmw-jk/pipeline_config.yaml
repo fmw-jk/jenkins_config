@@ -1,34 +1,10 @@
 server_name: jenkins-test-server
 user_name: fmw-jk
 repositories:
-  cob_simulation:
-    ros_distro: [groovy]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: oneiric
-    prio_arch: amd64
-    type: git
-    url: git@github.com:fmw-jk/cob_simulation.git
-    version: electric
-  cob_driver:
-    ros_distro: [fuerte]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: lucid
-    prio_arch: amd64
-    type: git
-    url: git@github.com:fmw-jk/cob_driver.git
-    version: electric
   cob_extern:
     ros_distro: [electric]
     robots: []
-    jobs: [regular_build]
+    jobs: []
     poll: true
     dependencies: {}
     matrix_distro_arch: {}
