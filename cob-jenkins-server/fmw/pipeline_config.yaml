@@ -4,10 +4,13 @@ repositories:
   cob_extern__abubeck_catkinization:
     ros_distro: [groovy]
     robots: []
-    jobs: []
+    jobs: [regular_build]
     poll: true
     dependencies: {}
-    matrix_distro_arch: {}
+    matrix_distro_arch:
+      oneiric: [amd64, i386]
+      quantal: [amd64, i386]
+      precise: [i386]
     prio_ubuntu_distro: precise
     prio_arch: amd64
     type: git
@@ -16,10 +19,13 @@ repositories:
   cob_extern__ipa320_groovy:
     ros_distro: [groovy]
     robots: []
-    jobs: []
+    jobs: [regular_build]
     poll: true
     dependencies: {}
-    matrix_distro_arch: {}
+    matrix_distro_arch:
+      oneiric: [amd64, i386]
+      quantal: [amd64, i386]
+      precise: [i386]
     prio_ubuntu_distro: precise
     prio_arch: amd64
     type: git
