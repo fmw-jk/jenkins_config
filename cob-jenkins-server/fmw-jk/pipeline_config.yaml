@@ -413,7 +413,7 @@ repositories:
     prio_arch: amd64
     type: git
     url: git@github.com:ipa320/seneka.git
-    version: master
+    version: fuerte_dev
   cob_calibration__32:
     ros_distro: [electric]
     robots: []
