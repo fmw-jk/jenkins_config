@@ -63,6 +63,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_navigation.git
     version: electric
+  schunk_modular_robotics__64bit:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: natty
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/schunk_modular_robotics.git
+    version: electric_dev
   navigation_experimental:
     ros_distro: [groovy]
     robots: []
