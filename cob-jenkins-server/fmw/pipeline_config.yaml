@@ -7,6 +7,8 @@ repositories:
     jobs: [regular_build]
     poll: true
     dependencies:
+      cob_common: {poll: true, type: git, url: 'git@github.com:ipa320/cob_common.git',
+        version: groovy_catkin}
       cob_extern: {poll: true, type: git, url: 'git@github.com:ipa320/cob_extern.git',
         version: groovy_catkin}
     matrix_distro_arch:
