@@ -1,7 +1,22 @@
 server_name: cob-jenkins-server
 user_name: fmw
 repositories:
-  cob_common__abubeck_catkinization:
+  cob_common__fmw_catkin:
+    ros_distro: [groovy]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch:
+      oneiric: [amd64, i386]
+      quantal: [amd64, i386]
+      precise: [i386]
+    prio_ubuntu_distro: precise
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-fmw/cob_common.git
+    version: feature-catkin
+  cob_common__abubeck_catkin:
     ros_distro: [groovy]
     robots: []
     jobs: []
@@ -28,20 +43,5 @@ repositories:
     type: git
     url: git@github.com:abubeck/cob_extern.git
     version: feature/catkin
-  cob_extern__ipa320_groovy:
-    ros_distro: [groovy]
-    robots: []
-    jobs: [regular_build]
-    poll: true
-    dependencies: {}
-    matrix_distro_arch:
-      oneiric: [amd64, i386]
-      quantal: [amd64, i386]
-      precise: [i386]
-    prio_ubuntu_distro: precise
-    prio_arch: amd64
-    type: git
-    url: git@github.com:ipa320/cob_extern.git
-    version: groovy_dev
 email: fmw@ipa.fhg.de
 committer_email_enabled: false
