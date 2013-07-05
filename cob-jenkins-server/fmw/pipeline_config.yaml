@@ -1,6 +1,25 @@
 server_name: cob-jenkins-server
 user_name: fmw
 repositories:
+  ipa_canopen__ipa320:
+    ros_distro: [groovy]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies:
+      cob_common: {poll: true, type: git, url: 'git@github.com:ipa320/cob_common.git',
+        version: groovy_dev}
+      cob_extern: {poll: true, type: git, url: 'git@github.com:ipa320/cob_extern.git',
+        version: groovy_dev}
+    matrix_distro_arch:
+      oneiric: [amd64, i386]
+      quantal: [amd64, i386]
+      precise: [i386]
+    prio_ubuntu_distro: precise
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/ipa_canopen.git
+    version: groovy_dev
   cob_robots__ipa320_catkin:
     ros_distro: [groovy]
     robots: []
