@@ -368,6 +368,18 @@ repositories:
     type: git
     url: git@github.com:fmw-jk/cob_common.git
     version: master
+  cob_calibration__fuerte:
+    ros_distro: [fuerte]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_calibration.git
+    version: fuerte_dev
   cob_industrial:
     ros_distro: [electric]
     robots: []
@@ -452,18 +464,6 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_command_tools.git
     version: fuerte_release_candidate
-  cob_calibration:
-    ros_distro: [fuerte]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: oneiric
-    prio_arch: amd64
-    type: git
-    url: git@github.com:ipa320/cob_calibration.git
-    version: fuerte_dev
   cob_robots:
     ros_distro: [electric]
     robots: []
