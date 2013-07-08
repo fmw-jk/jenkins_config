@@ -1,0 +1,32 @@
+server_name: cob-jenkins-server
+user_name: mdl
+repositories:
+  cob_manipulation:
+    ros_distro: [groovy]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: quantal
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-mdl/cob_manipulation.git
+    version: groovy
+  cob_manipulation___electric:
+    ros_distro: [electric]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch:
+      natty: [amd64, i386]
+      oneiric: [amd64, i386]
+      lucid: [i386]
+    prio_ubuntu_distro: lucid
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-mdl/cob_manipulation.git
+    version: electric
+email: mathias.luedtke@ipa.fraunhofer.de
+committer_email_enabled: false

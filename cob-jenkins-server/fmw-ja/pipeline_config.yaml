@@ -1,0 +1,17 @@
+server_name: cob-jenkins-server
+user_name: fmw-ja
+repositories:
+  cob_calibration:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: lucid
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-fmw-ja/cob_calibration.git
+    version: master
+email: jannik.abbenseth@gmail.com
+committer_email_enabled: false

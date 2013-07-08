@@ -1,0 +1,19 @@
+server_name: localhost
+user_name: e
+repositories:
+  cob_common__aeoae:
+    ros_distro: [fuerte, groovy]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies:
+      cob_bringup_overlays: {poll: true, type: git, url: 'git@github.com:ipa-nhg/cob_bringup_overlays.git',
+        version: electric_dev}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-taj-dm/cob_common.git
+    version: master
+email: e@abc.de
+committer_email_enabled: true

@@ -1,0 +1,128 @@
+server_name: cob-jenkins-server
+user_name: mig
+repositories:
+  cob_driver__groovy:
+    ros_distro: [groovy]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch:
+      oneiric: [amd64, i386]
+      quantal: [amd64, i386]
+      precise: [i386]
+    prio_ubuntu_distro: precise
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-mig/cob_driver.git
+    version: groovy_dev
+  cob_navigation__fuerte:
+    ros_distro: [fuerte]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch:
+      oneiric: [amd64, i386]
+      lucid: [amd64, i386]
+      precise: [i386]
+    prio_ubuntu_distro: precise
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-mig/cob_navigation.git
+    version: fuerte_dev
+  cob_driver__fuerte:
+    ros_distro: [fuerte]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch:
+      oneiric: [amd64, i386]
+      lucid: [amd64, i386]
+      precise: [i386]
+    prio_ubuntu_distro: precise
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-mig/cob_driver.git
+    version: fuerte_dev
+  cob_robots__fuerte:
+    ros_distro: [fuerte]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch:
+      oneiric: [amd64, i386]
+      lucid: [amd64, i386]
+      precise: [i386]
+    prio_ubuntu_distro: precise
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-mig/cob_robots.git
+    version: fuerte_dev
+  cob_navigation__electric:
+    ros_distro: [electric]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch:
+      natty: [amd64, i386]
+      oneiric: [amd64, i386]
+      lucid: [i386]
+      maverick: [amd64, i386]
+    prio_ubuntu_distro: lucid
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-mig/cob_navigation.git
+    version: electric_dev
+  seneka:
+    ros_distro: [fuerte]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch:
+      oneiric: [amd64, i386]
+      lucid: [amd64, i386]
+      precise: [i386]
+    prio_ubuntu_distro: precise
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-mig/seneka.git
+    version: master
+  cob_robots__electric:
+    ros_distro: [electric]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch:
+      natty: [amd64, i386]
+      oneiric: [amd64, i386]
+      lucid: [i386]
+      maverick: [amd64, i386]
+    prio_ubuntu_distro: lucid
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-mig/cob_robots.git
+    version: electric_dev
+  cob_driver__electric:
+    ros_distro: [electric]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch:
+      natty: [amd64, i386]
+      oneiric: [amd64, i386]
+      lucid: [i386]
+      maverick: [amd64, i386]
+    prio_ubuntu_distro: lucid
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-mig/cob_driver.git
+    version: electric_dev
+email: Matthias.Gruhler@ipa.fraunhofer.de
+committer_email_enabled: false
