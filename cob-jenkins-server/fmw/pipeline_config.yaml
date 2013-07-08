@@ -20,6 +20,22 @@ repositories:
     type: git
     url: git@github.com:ipa320/ipa_canopen.git
     version: groovy_dev
+  cob_driver__fmw:
+    ros_distro: [groovy]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies:
+      cob_common: {poll: false, type: git, url: 'git@github.com:ipa320/cob_common.git',
+        version: groovy_dev}
+      cob_extern: {poll: false, type: git, url: 'git@github.com:ipa320/cob_extern.git',
+        version: groovy_dev}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: quantal
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-fmw/cob_driver.git
+    version: groovy_dev
   cob_robots__ipa320_catkin:
     ros_distro: [groovy]
     robots: []
@@ -82,21 +98,17 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_simulation.git
     version: groovy_dev
-  cob_driver:
+  cob_extern:
     ros_distro: [groovy]
     robots: []
-    jobs: [regular_build]
+    jobs: []
     poll: true
-    dependencies:
-      cob_common: {poll: false, type: git, url: 'git@github.com:ipa320/cob_common.git',
-        version: groovy_dev}
-      cob_extern: {poll: false, type: git, url: 'git@github.com:ipa320/cob_extern.git',
-        version: groovy_dev}
+    dependencies: {}
     matrix_distro_arch: {}
     prio_ubuntu_distro: quantal
     prio_arch: amd64
     type: git
-    url: git@github.com:ipa-fmw/cob_driver.git
+    url: git@github.com:ipa-fmw/cob_extern.git
     version: groovy_dev
   cob_simulation__ipa320_groovy_release_candidate:
     ros_distro: [groovy]
