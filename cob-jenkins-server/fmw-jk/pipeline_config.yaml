@@ -471,7 +471,7 @@ repositories:
     poll: true
     dependencies: {}
     matrix_distro_arch: {}
-    prio_ubuntu_distro: natty
+    prio_ubuntu_distro: ''
     prio_arch: amd64
     type: git
     url: git@github.com:ipa320/cob_robots.git
