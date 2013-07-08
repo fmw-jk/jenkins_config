@@ -98,6 +98,18 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_simulation.git
     version: groovy_dev
+  cob_extern:
+    ros_distro: [groovy]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies: {}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: quantal
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-fmw/cob_extern.git
+    version: groovy_dev
   cob_simulation__ipa320_groovy_release_candidate:
     ros_distro: [groovy]
     robots: []
