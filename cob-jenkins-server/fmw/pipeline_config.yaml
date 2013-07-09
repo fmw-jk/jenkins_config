@@ -89,6 +89,25 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_simulation.git
     version: groovy_dev
+  cob_driver__asdasdasdasd:
+    ros_distro: [groovy]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies:
+      cob_common: {poll: false, type: git, url: 'git@github.com:ipa320/cob_common.git',
+        version: groovy_dev}
+      cob_extern: {poll: false, type: git, url: 'git@github.com:ipa320/cob_extern.git',
+        version: groovy_dev}
+    matrix_distro_arch:
+      oneiric: [amd64, i386]
+      quantal: [i386]
+      precise: [amd64, i386]
+    prio_ubuntu_distro: quantal
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-fmw/cob_driver.git
+    version: groovy_dev
   cob_simulation__ipa320_groovy_release_candidate:
     ros_distro: [groovy]
     robots: []
