@@ -144,10 +144,10 @@ repositories:
       cob_robots: {poll: true, type: git, url: 'git@github.com:ipa-fmw/cob_robots.git',
         version: groovy_dev}
     matrix_distro_arch:
-      oneiric: [amd64, i386]
+      oneiric: [i386]
       quantal: [amd64, i386]
       precise: [i386]
-    prio_ubuntu_distro: precise
+    prio_ubuntu_distro: oneiric
     prio_arch: amd64
     type: git
     url: git@github.com:ipa-fmw/cob_simulation.git
