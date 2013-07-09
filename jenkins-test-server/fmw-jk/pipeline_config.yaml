@@ -1,6 +1,20 @@
 server_name: jenkins-test-server
 user_name: fmw-jk
 repositories:
+  cob_navigation__rc:
+    ros_distro: [electric]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies:
+      cob_environments: {poll: false, type: git, url: 'git@github.com:ipa320/cob_environments.git',
+        version: electric_release_candidate}
+    matrix_distro_arch: {}
+    prio_ubuntu_distro: oneiric
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_navigation.git
+    version: electric_release_candidate
   cob_extern:
     ros_distro: [electric]
     robots: []
