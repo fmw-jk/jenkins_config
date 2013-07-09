@@ -20,25 +20,6 @@ repositories:
     type: git
     url: git@github.com:ipa320/ipa_canopen.git
     version: groovy_dev
-  cob_driver__fmw:
-    ros_distro: [groovy]
-    robots: []
-    jobs: [regular_build]
-    poll: true
-    dependencies:
-      cob_common: {poll: false, type: git, url: 'git@github.com:ipa320/cob_common.git',
-        version: groovy_dev}
-      cob_extern: {poll: false, type: git, url: 'git@github.com:ipa320/cob_extern.git',
-        version: groovy_dev}
-    matrix_distro_arch:
-      oneiric: [amd64, i386]
-      quantal: [i386]
-      precise: [amd64, i386]
-    prio_ubuntu_distro: quantal
-    prio_arch: amd64
-    type: git
-    url: git@github.com:ipa-fmw/cob_driver.git
-    version: groovy_dev
   cob_robots__ipa320_catkin:
     ros_distro: [groovy]
     robots: []
@@ -136,6 +117,41 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_simulation.git
     version: groovy_release_candidate
+  cob_simulation__fmw:
+    ros_distro: [groovy]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies:
+      cob_substitute: {poll: false, type: git, url: 'git@github.com:ipa320/cob_substitute.git',
+        version: groovy_dev}
+      cob_calibration_data: {poll: false, type: git, url: 'git@github.com:ipa320/cob_calibration_data.git',
+        version: groovy_dev}
+      universal_robot: {poll: false, type: git, url: 'git@github.com:ipa320/universal_robot.git',
+        version: groovy_dev}
+      cob_command_tools: {poll: true, type: git, url: 'git@github.com:ipa-fmw/cob_command_tools.git',
+        version: groovy_dev}
+      schunk_modular_robotics: {poll: true, type: git, url: 'git@github.com:ipa-fmw/schunk_modular_robotics.git',
+        version: groovy_dev}
+      cob_driver: {poll: true, type: git, url: 'git@github.com:ipa-fmw/cob_driver.git',
+        version: groovy_dev}
+      cob_environments: {poll: true, type: git, url: 'git@github.com:ipa-fmw/cob_environments.git',
+        version: groovy_dev}
+      cob_common: {poll: true, type: git, url: 'git@github.com:ipa-fmw/cob_common.git',
+        version: groovy_dev}
+      cob_extern: {poll: true, type: git, url: 'git@github.com:ipa-fmw/cob_extern.git',
+        version: groovy_dev}
+      cob_robots: {poll: true, type: git, url: 'git@github.com:ipa-fmw/cob_robots.git',
+        version: groovy_dev}
+    matrix_distro_arch:
+      oneiric: [amd64, i386]
+      quantal: [amd64, i386]
+      precise: [i386]
+    prio_ubuntu_distro: precise
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa-fmw/cob_simulation.git
+    version: groovy_dev
   cob_navigation__ipa320_groovy:
     ros_distro: [groovy]
     robots: []
