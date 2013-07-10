@@ -9,8 +9,6 @@ repositories:
     dependencies:
       cob_common: {poll: true, type: git, url: 'git@github.com:ipa320/cob_common.git',
         version: groovy_dev}
-      cob_extern: {poll: true, type: git, url: 'git@github.com:ipa320/cob_extern.git',
-        version: groovy_dev}
     matrix_distro_arch:
       oneiric: [amd64, i386]
       quantal: [amd64, i386]
@@ -69,8 +67,6 @@ repositories:
         version: groovy_dev}
       cob_common: {poll: true, type: git, url: 'git@github.com:ipa320/cob_common.git',
         version: groovy_dev}
-      cob_extern: {poll: true, type: git, url: 'git@github.com:ipa320/cob_extern.git',
-        version: groovy_dev}
       cob_robots: {poll: true, type: git, url: 'git@github.com:ipa320/cob_robots.git',
         version: groovy_dev}
     matrix_distro_arch:
@@ -104,8 +100,6 @@ repositories:
         version: groovy_release_candidate}
       cob_common: {poll: true, type: git, url: 'git@github.com:ipa320/cob_common.git',
         version: groovy_release_candidate}
-      cob_extern: {poll: true, type: git, url: 'git@github.com:ipa320/cob_extern.git',
-        version: groovy_release_candidate}
       cob_robots: {poll: true, type: git, url: 'git@github.com:ipa320/cob_robots.git',
         version: groovy_release_candidate}
     matrix_distro_arch:
@@ -138,8 +132,6 @@ repositories:
       cob_environments: {poll: true, type: git, url: 'git@github.com:ipa-fmw/cob_environments.git',
         version: groovy_dev}
       cob_common: {poll: true, type: git, url: 'git@github.com:ipa-fmw/cob_common.git',
-        version: groovy_dev}
-      cob_extern: {poll: true, type: git, url: 'git@github.com:ipa-fmw/cob_extern.git',
         version: groovy_dev}
       cob_robots: {poll: true, type: git, url: 'git@github.com:ipa-fmw/cob_robots.git',
         version: groovy_dev}
