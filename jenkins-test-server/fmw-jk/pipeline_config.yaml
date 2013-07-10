@@ -15,17 +15,5 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_navigation.git
     version: electric_release_candidate
-  cob_extern:
-    ros_distro: [electric]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    prio_ubuntu_distro: natty
-    regular_matrix: {}
-    prio_arch: amd64
-    type: git
-    url: git@github.com:fmw-jk/cob_extern.git
-    version: electric
 email: jannik.kett@gmail.com
 committer_email_enabled: false
