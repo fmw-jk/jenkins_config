@@ -2,7 +2,7 @@ server_name: cob-jenkins-server
 user_name: goa
 repositories:
   cob_environment_perception:
-    ros_distro: [electric, fuerte, groovy]
+    ros_distro: [groovy]
     robots: []
     jobs: []
     poll: true
