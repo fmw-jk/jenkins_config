@@ -11,6 +11,7 @@ repositories:
         version: electric_release_candidate}
     prio_ubuntu_distro: oneiric
     regular_matrix:
+      oneiric: [i386]
       maverick: [i386]
     prio_arch: amd64
     type: git
