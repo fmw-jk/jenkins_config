@@ -1,6 +1,42 @@
 server_name: jenkins-test-server
 user_name: fmw-jk
 repositories:
+  ba:
+    ros_distro: [groovy]
+    robots: []
+    jobs: []
+    poll: true
+    dependencies:
+      cob_substitute: {poll: false, type: git, url: 'git@github.com:ipa320/cob_substitute.git',
+        version: groovy_dev}
+      cob_calibration_data: {poll: false, type: git, url: 'git@github.com:ipa320/cob_calibration_data.git',
+        version: groovy_dev}
+      cob_navigation: {poll: false, type: git, url: 'git@github.com:ipa320/cob_navigation.git',
+        version: groovy_dev}
+      cob_simulation: {poll: false, type: git, url: 'git@github.com:ipa320/cob_simulation.git',
+        version: groovy_dev}
+      universal_robot: {poll: false, type: git, url: 'git@github.com:ipa320/universal_robot.git',
+        version: groovy_dev}
+      cob_command_tools: {poll: false, type: git, url: 'git@github.com:ipa320/cob_command_tools.git',
+        version: groovy_dev}
+      schunk_modular_robotics: {poll: false, type: git, url: 'git@github.com:ipa320/schunk_modular_robotics.git',
+        version: groovy_dev}
+      cob_driver: {poll: false, type: git, url: 'git@github.com:ipa320/cob_driver.git',
+        version: groovy_dev}
+      cob_extern: {poll: false, type: git, url: 'git@github.com:ipa320/cob_extern.git',
+        version: groovy_dev}
+      cob_environments: {poll: false, type: git, url: 'git@github.com:ipa320/cob_environments.git',
+        version: groovy_dev}
+      cob_common: {poll: false, type: git, url: 'git@github.com:ipa320/cob_common.git',
+        version: groovy_dev}
+      cob_robots: {poll: false, type: git, url: 'git@github.com:ipa320/cob_robots.git',
+        version: groovy_dev}
+    prio_ubuntu_distro: oneiric
+    regular_matrix: {}
+    prio_arch: amd64
+    type: git
+    url: git@github.com:SimonEbner/ba.git
+    version: groovy
   cob_navigation__rc:
     ros_distro: [electric]
     robots: []
