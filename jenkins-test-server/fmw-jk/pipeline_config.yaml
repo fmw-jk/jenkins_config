@@ -4,7 +4,7 @@ repositories:
   ba:
     ros_distro: [groovy]
     robots: []
-    jobs: [downstream_build, graphics_test]
+    jobs: []
     poll: true
     dependencies:
       cob_substitute: {poll: false, type: git, url: 'git@github.com:ipa320/cob_substitute.git',
@@ -35,7 +35,7 @@ repositories:
     regular_matrix: {}
     prio_arch: amd64
     type: git
-    url: git@github.com:SimonEbner/ba.git
+    url: git@github.com:fmw-jk/ba.git
     version: groovy
   cob_navigation__rc:
     ros_distro: [electric]
