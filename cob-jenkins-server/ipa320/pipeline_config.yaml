@@ -13,6 +13,8 @@ repositories:
         version: groovy_dev}
       universal_robot: {poll: true, type: git, url: 'git@github.com:ipa320/universal_robot.git',
         version: groovy_dev}
+      cob_command_tools: {poll: true, type: git, url: 'git@github.com:ipa320/cob_command_tools.git',
+        version: groovy_dev}
       schunk_modular_robotics: {poll: true, type: git, url: 'git@github.com:ipa320/schunk_modular_robotics.git',
         version: groovy_dev}
       cob_driver: {poll: true, type: git, url: 'git@github.com:ipa320/cob_driver.git',
