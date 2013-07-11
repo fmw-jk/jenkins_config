@@ -4,7 +4,7 @@ repositories:
   ba:
     ros_distro: [groovy]
     robots: []
-    jobs: []
+    jobs: [downstream_build, graphics_test]
     poll: true
     dependencies:
       cob_substitute: {poll: false, type: git, url: 'git@github.com:ipa320/cob_substitute.git',
