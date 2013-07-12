@@ -39,7 +39,7 @@ repositories:
     version: groovy
   cob_navigation__rc:
     ros_distro: [electric]
-    robots: [cob3-3]
+    robots: [cob3-3-pc1]
     jobs: [regular_build, downstream_build, nongraphics_test, hardware_build]
     poll: true
     dependencies:
