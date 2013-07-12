@@ -40,7 +40,7 @@ repositories:
   cob_navigation__rc:
     ros_distro: [electric]
     robots: []
-    jobs: [regular_build, downstream_build, nongraphics_test, graphics_test]
+    jobs: [regular_build, downstream_build, nongraphics_test]
     poll: true
     dependencies:
       cob_environments: {poll: false, type: git, url: 'git@github.com:ipa320/cob_environments.git',
