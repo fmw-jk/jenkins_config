@@ -4,15 +4,13 @@ repositories:
   cob_navigation__without_test:
     ros_distro: [groovy]
     robots: []
-    jobs: [regular_build]
+    jobs: []
     poll: true
     dependencies:
       cob_environments: {poll: false, type: git, url: 'git@github.com:ipa320/cob_environments.git',
         version: groovy_dev}
     prio_ubuntu_distro: precise
-    regular_matrix:
-      oneiric: [amd64, i386]
-      precise: [amd64]
+    regular_matrix: {}
     prio_arch: i386
     type: git
     url: git@github.com:ipa320/cob_navigation.git
@@ -20,15 +18,13 @@ repositories:
   cob_navigation__non-graphics:
     ros_distro: [groovy]
     robots: []
-    jobs: [regular_build, downstream_build, nongraphics_test]
+    jobs: []
     poll: true
     dependencies:
       cob_environments: {poll: false, type: git, url: 'git@github.com:ipa320/cob_environments.git',
         version: groovy_dev}
     prio_ubuntu_distro: precise
-    regular_matrix:
-      oneiric: [amd64, i386]
-      precise: [i386]
+    regular_matrix: {}
     prio_arch: amd64
     type: git
     url: git@github.com:ipa320/cob_navigation.git
