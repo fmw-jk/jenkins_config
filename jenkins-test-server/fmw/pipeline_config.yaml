@@ -19,7 +19,7 @@ repositories:
     version: groovy_dev
   cob_navigation__non-graphics:
     ros_distro: [groovy]
-    robots: []
+    robots: [cob3-3-pc1]
     jobs: [regular_build, downstream_build, nongraphics_test, hardware_build]
     poll: true
     dependencies:
