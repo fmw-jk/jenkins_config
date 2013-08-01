@@ -36,6 +36,6 @@ repositories:
     prio_arch: amd64
     type: git
     url: git@github.com:SimonEbner/ba.git
-    version: groovy
-email: Simon.Ebner@gmail.com
+    version: groovy_dev
+email: uhr-se@ipa.fhg.de
 committer_email_enabled: false
