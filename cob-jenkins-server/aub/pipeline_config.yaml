@@ -1,6 +1,19 @@
 server_name: cob-jenkins-server
 user_name: aub
 repositories:
+  cob_extern:
+    ros_distro: [groovy]
+    robots: []
+    jobs: [regular_build]
+    poll: true
+    dependencies: {}
+    matrix_distro_arch:
+      oneiric: [amd64, i386]
+    prio_ubuntu_distro: precise
+    prio_arch: amd64
+    type: git
+    url: git@github.com:abubeck/cob_extern.git
+    version: groovy_dev
   cob_common:
     ros_distro: [groovy]
     robots: []
