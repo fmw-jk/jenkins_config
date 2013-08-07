@@ -7,8 +7,6 @@ repositories:
     jobs: [regular_build]
     poll: true
     dependencies:
-      cob_driver: {poll: false, type: git, url: 'git@github.com:ipa320/cob_driver.git',
-        version: groovy_dev}
       cob_common: {poll: false, type: git, url: 'git@github.com:ipa320/cob_common.git',
         version: groovy_dev}
       cob_environments: {poll: false, type: git, url: 'git@github.com:ipa320/cob_environments.git',
@@ -16,7 +14,6 @@ repositories:
     prio_ubuntu_distro: precise
     regular_matrix:
       oneiric: [amd64, i386]
-      quantal: [amd64, i386]
       precise: [amd64]
     prio_arch: i386
     type: git
@@ -24,12 +21,10 @@ repositories:
     version: groovy_dev
   cob_navigation__non-graphics:
     ros_distro: [groovy]
-    robots: []
-    jobs: [regular_build, downstream_build, nongraphics_test]
+    robots: [fmw-xps]
+    jobs: [regular_build, downstream_build, nongraphics_test, hardware_build]
     poll: true
     dependencies:
-      cob_driver: {poll: false, type: git, url: 'git@github.com:ipa320/cob_driver.git',
-        version: groovy_dev}
       cob_common: {poll: false, type: git, url: 'git@github.com:ipa320/cob_common.git',
         version: groovy_dev}
       cob_environments: {poll: false, type: git, url: 'git@github.com:ipa320/cob_environments.git',
@@ -37,7 +32,6 @@ repositories:
     prio_ubuntu_distro: precise
     regular_matrix:
       oneiric: [amd64, i386]
-      quantal: [amd64, i386]
       precise: [i386]
     prio_arch: amd64
     type: git
