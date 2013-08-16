@@ -1,7 +1,7 @@
 server_name: jenkins-test-server
 user_name: fmw-ak
 repositories:
-  cob_extern:
+  cob_common:
     ros_distro: [groovy]
     robots: [desire]
     jobs: [hardware_build]
@@ -11,7 +11,7 @@ repositories:
     regular_matrix: {}
     prio_arch: amd64
     type: git
-    url: git@github.com:ipa320/cob_extern.git
+    url: git@github.com:ipa320/cob_common.git
     version: groovy_dev
 email: fmw-ak@ipa.fhg.de
 committer_email_enabled: false
