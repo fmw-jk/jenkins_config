@@ -3,7 +3,7 @@ user_name: fmw-ak
 repositories:
   cob_navigation:
     ros_distro: [groovy]
-    robots: [cob3-3-pc1]
+    robots: [desire]
     jobs: [hardware_build]
     poll: true
     dependencies: {}
