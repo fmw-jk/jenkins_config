@@ -3,8 +3,8 @@ user_name: fmw-jk
 repositories:
   ba:
     ros_distro: [groovy]
-    robots: []
-    jobs: [downstream_build, graphics_test]
+    robots: [desire]
+    jobs: [downstream_build, graphics_test, hardware_build]
     poll: true
     dependencies:
       cob_substitute: {poll: false, type: git, url: 'git@github.com:ipa320/cob_substitute.git',
