@@ -9,10 +9,7 @@ repositories:
     dependencies:
       cob_common: {poll: true, type: git, url: 'git@github.com:ipa320/cob_common.git',
         version: groovy_dev}
-    matrix_distro_arch:
-      oneiric: [amd64, i386]
-      quantal: [amd64, i386]
-      precise: [i386]
+    matrix_distro_arch: {}
     prio_ubuntu_distro: precise
     prio_arch: amd64
     type: git
@@ -36,10 +33,7 @@ repositories:
         version: groovy_catkin}
       cob_extern: {poll: true, type: git, url: 'git@github.com:ipa320/cob_extern.git',
         version: groovy_catkin}
-    matrix_distro_arch:
-      oneiric: [amd64, i386]
-      quantal: [amd64, i386]
-      precise: [i386]
+    matrix_distro_arch: {}
     prio_ubuntu_distro: precise
     prio_arch: amd64
     type: git
@@ -71,10 +65,7 @@ repositories:
         version: groovy_dev}
       cob_robots: {poll: true, type: git, url: 'git@github.com:ipa320/cob_robots.git',
         version: groovy_dev}
-    matrix_distro_arch:
-      oneiric: [amd64, i386]
-      quantal: [amd64, i386]
-      precise: [i386]
+    matrix_distro_arch: {}
     prio_ubuntu_distro: precise
     prio_arch: amd64
     type: git
@@ -106,10 +97,7 @@ repositories:
         version: groovy_release_candidate}
       cob_robots: {poll: true, type: git, url: 'git@github.com:ipa320/cob_robots.git',
         version: groovy_release_candidate}
-    matrix_distro_arch:
-      oneiric: [amd64, i386]
-      quantal: [amd64, i386]
-      precise: [i386]
+    matrix_distro_arch: {}
     prio_ubuntu_distro: precise
     prio_arch: amd64
     type: git
@@ -141,10 +129,7 @@ repositories:
         version: groovy_dev}
       cob_robots: {poll: true, type: git, url: 'git@github.com:ipa-fmw/cob_robots.git',
         version: groovy_dev}
-    matrix_distro_arch:
-      oneiric: [i386]
-      quantal: [amd64, i386]
-      precise: [i386]
+    matrix_distro_arch: {}
     prio_ubuntu_distro: oneiric
     prio_arch: amd64
     type: git
@@ -160,10 +145,7 @@ repositories:
         version: groovy_dev}
       cob_environments: {poll: true, type: git, url: 'git@github.com:ipa320/cob_environments.git',
         version: groovy_dev}
-    matrix_distro_arch:
-      oneiric: [amd64, i386]
-      quantal: [amd64, i386]
-      precise: [i386]
+    matrix_distro_arch: {}
     prio_ubuntu_distro: precise
     prio_arch: amd64
     type: git
