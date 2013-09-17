@@ -15,18 +15,6 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_simulation.git
     version: fuerte
-  pr2_navigation:
-    ros_distro: [electric]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: natty
-    prio_arch: amd64
-    type: git
-    url: git@github.com:ros-planning/pr2_navigation.git
-    version: electric_branch
   cob_driver__fuerte:
     ros_distro: [fuerte]
     robots: []
