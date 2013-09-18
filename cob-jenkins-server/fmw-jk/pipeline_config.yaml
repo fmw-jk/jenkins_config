@@ -416,18 +416,6 @@ repositories:
     type: git
     url: git@github.com:ros/ros_tutorials.git
     version: groovy-devel
-  seneka:
-    ros_distro: [fuerte]
-    robots: []
-    jobs: []
-    poll: true
-    dependencies: {}
-    matrix_distro_arch: {}
-    prio_ubuntu_distro: oneiric
-    prio_arch: amd64
-    type: git
-    url: git@github.com:ipa320/seneka.git
-    version: fuerte_dev
   cob_calibration__32:
     ros_distro: [electric]
     robots: []
