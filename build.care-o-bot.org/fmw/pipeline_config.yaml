@@ -1,7 +1,19 @@
 server_name: build.care-o-bot.org
 user_name: fmw
 repositories:
-  cob_common:
+  cob_common__hydro:
+    ros_distro: [hydro]
+    robots: null
+    jobs: []
+    poll: true
+    dependencies: {}
+    prio_ubuntu_distro: precise
+    regular_matrix: {}
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_common.git
+    version: hydro_dev
+  cob_common__groovy:
     ros_distro: [groovy]
     robots: null
     jobs: [regular_build]
