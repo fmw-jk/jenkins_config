@@ -4,7 +4,7 @@ repositories:
   cob_common:
     ros_distro: [groovy]
     robots: null
-    jobs: [regular_build]
+    jobs: [regular_build, downstream_build, nongraphics_test]
     poll: true
     dependencies: {}
     prio_ubuntu_distro: precise
