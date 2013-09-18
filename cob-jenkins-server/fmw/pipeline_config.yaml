@@ -3,21 +3,21 @@ user_name: fmw
 repositories:
   ipa_canopen__ipa320:
     ros_distro: [groovy]
-    robots: []
+    robots: null
     jobs: [regular_build]
     poll: true
     dependencies:
       cob_common: {poll: true, type: git, url: 'git@github.com:ipa320/cob_common.git',
         version: groovy_dev}
-    matrix_distro_arch: {}
     prio_ubuntu_distro: precise
+    regular_matrix: {}
     prio_arch: amd64
     type: git
     url: git@github.com:ipa320/ipa_canopen.git
     version: groovy_dev
   cob_robots__ipa320_catkin:
     ros_distro: [groovy]
-    robots: []
+    robots: null
     jobs: [regular_build]
     poll: true
     dependencies:
@@ -33,15 +33,15 @@ repositories:
         version: groovy_catkin}
       cob_extern: {poll: true, type: git, url: 'git@github.com:ipa320/cob_extern.git',
         version: groovy_catkin}
-    matrix_distro_arch: {}
     prio_ubuntu_distro: precise
+    regular_matrix: {}
     prio_arch: amd64
     type: git
     url: git@github.com:ipa320/cob_robots.git
     version: groovy_catkin
   cob_simulation__ipa320_groovy_rosbuild:
     ros_distro: [groovy]
-    robots: []
+    robots: null
     jobs: [regular_build]
     poll: true
     dependencies:
@@ -65,15 +65,15 @@ repositories:
         version: groovy_dev}
       cob_robots: {poll: true, type: git, url: 'git@github.com:ipa320/cob_robots.git',
         version: groovy_dev}
-    matrix_distro_arch: {}
     prio_ubuntu_distro: precise
+    regular_matrix: {}
     prio_arch: amd64
     type: git
     url: git@github.com:ipa320/cob_simulation.git
     version: groovy_dev
   cob_simulation__ipa320_groovy_release_candidate:
     ros_distro: [groovy]
-    robots: []
+    robots: null
     jobs: [regular_build]
     poll: true
     dependencies:
@@ -97,15 +97,15 @@ repositories:
         version: groovy_release_candidate}
       cob_robots: {poll: true, type: git, url: 'git@github.com:ipa320/cob_robots.git',
         version: groovy_release_candidate}
-    matrix_distro_arch: {}
     prio_ubuntu_distro: precise
+    regular_matrix: {}
     prio_arch: amd64
     type: git
     url: git@github.com:ipa320/cob_simulation.git
     version: groovy_release_candidate
   cob_simulation__fmw:
     ros_distro: [groovy]
-    robots: []
+    robots: null
     jobs: [regular_build]
     poll: true
     dependencies:
@@ -129,15 +129,15 @@ repositories:
         version: groovy_dev}
       cob_robots: {poll: true, type: git, url: 'git@github.com:ipa-fmw/cob_robots.git',
         version: groovy_dev}
-    matrix_distro_arch: {}
     prio_ubuntu_distro: oneiric
+    regular_matrix: {}
     prio_arch: amd64
     type: git
     url: git@github.com:ipa-fmw/cob_simulation.git
     version: groovy_dev
   cob_navigation__ipa320_groovy:
     ros_distro: [groovy]
-    robots: []
+    robots: null
     jobs: [regular_build]
     poll: true
     dependencies:
@@ -145,8 +145,8 @@ repositories:
         version: groovy_dev}
       cob_environments: {poll: true, type: git, url: 'git@github.com:ipa320/cob_environments.git',
         version: groovy_dev}
-    matrix_distro_arch: {}
     prio_ubuntu_distro: precise
+    regular_matrix: {}
     prio_arch: amd64
     type: git
     url: git@github.com:ipa320/cob_navigation.git
