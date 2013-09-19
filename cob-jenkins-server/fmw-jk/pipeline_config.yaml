@@ -4,7 +4,7 @@ repositories:
   cob_extern:
     ros_distro: [groovy]
     robots: null
-    jobs: [downstream_build, graphics_test]
+    jobs: []
     poll: true
     dependencies: {}
     prio_ubuntu_distro: oneiric
