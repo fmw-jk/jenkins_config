@@ -1,41 +1,17 @@
 server_name: jenkins-test-server
 user_name: fmw
 repositories:
-  cob_navigation__without_test:
+  cob_navigation_intern:
     ros_distro: [groovy]
-    robots: []
-    jobs: [regular_build]
+    robots: null
+    jobs: []
     poll: true
-    dependencies:
-      cob_common: {poll: false, type: git, url: 'git@github.com:ipa320/cob_common.git',
-        version: groovy_dev}
-      cob_environments: {poll: false, type: git, url: 'git@github.com:ipa320/cob_environments.git',
-        version: groovy_dev}
+    dependencies: {}
     prio_ubuntu_distro: precise
-    regular_matrix:
-      oneiric: [amd64, i386]
-      precise: [amd64]
-    prio_arch: i386
-    type: git
-    url: git@github.com:ipa320/cob_navigation.git
-    version: groovy_dev
-  cob_navigation__non-graphics:
-    ros_distro: [groovy]
-    robots: [fmw-xps]
-    jobs: [regular_build, downstream_build, nongraphics_test, hardware_build]
-    poll: true
-    dependencies:
-      cob_common: {poll: false, type: git, url: 'git@github.com:ipa320/cob_common.git',
-        version: groovy_dev}
-      cob_environments: {poll: false, type: git, url: 'git@github.com:ipa320/cob_environments.git',
-        version: groovy_dev}
-    prio_ubuntu_distro: precise
-    regular_matrix:
-      oneiric: [amd64, i386]
-      precise: [i386]
+    regular_matrix: {}
     prio_arch: amd64
     type: git
-    url: git@github.com:ipa320/cob_navigation.git
-    version: groovy_dev
+    url: git@github.com:ipa320/cob_navigation_intern.git
+    version: fuerte_dev
 email: fmw@ipa.fhg.de
 committer_email_enabled: false
