@@ -1,13 +1,29 @@
 server_name: cob-jenkins-server
 user_name: ipa320
 repositories:
-  cob_navigation:
+  cob_simulation__bringup_groovy:
     ros_distro: [groovy]
     robots: null
-    jobs: [regular_build, downstream_build, nongraphics_test, graphics_test]
+    jobs: [regular_build, downstream_build, nongraphics_test]
     poll: true
     dependencies:
+      cob_calibration_data: {poll: true, type: git, url: 'git@github.com:ipa320/cob_calibration_data.git',
+        version: groovy_dev}
+      universal_robot: {poll: true, type: git, url: 'git@github.com:ipa320/universal_robot.git',
+        version: groovy_dev}
+      cob_command_tools: {poll: true, type: git, url: 'git@github.com:ipa320/cob_command_tools.git',
+        version: groovy_dev}
+      schunk_modular_robotics: {poll: true, type: git, url: 'git@github.com:ipa320/schunk_modular_robotics.git',
+        version: groovy_dev}
+      cob_driver: {poll: true, type: git, url: 'git@github.com:ipa320/cob_driver.git',
+        version: groovy_dev}
+      cob_extern: {poll: true, type: git, url: 'git@github.com:ipa320/cob_extern.git',
+        version: groovy_dev}
       cob_environments: {poll: true, type: git, url: 'git@github.com:ipa320/cob_environments.git',
+        version: groovy_dev}
+      cob_common: {poll: true, type: git, url: 'git@github.com:ipa320/cob_common.git',
+        version: groovy_dev}
+      cob_robots: {poll: true, type: git, url: 'git@github.com:ipa320/cob_robots.git',
         version: groovy_dev}
     prio_ubuntu_distro: precise
     regular_matrix:
@@ -16,12 +32,12 @@ repositories:
       precise: [i386]
     prio_arch: amd64
     type: git
-    url: git@github.com:ipa320/cob_navigation.git
+    url: git@github.com:ipa320/cob_simulation.git
     version: groovy_dev
-  cob_common:
+  cob_common__jenkinstest_groovy:
     ros_distro: [groovy]
     robots: null
-    jobs: [regular_build]
+    jobs: [regular_build, downstream_build, nongraphics_test]
     poll: true
     dependencies: {}
     prio_ubuntu_distro: precise
@@ -33,5 +49,20 @@ repositories:
     type: git
     url: git@github.com:ipa320/cob_common.git
     version: groovy_dev
+  cob_common__jenkinstest_hydro:
+    ros_distro: [hydro]
+    robots: null
+    jobs: [regular_build, downstream_build, nongraphics_test]
+    poll: true
+    dependencies: {}
+    prio_ubuntu_distro: precise
+    regular_matrix:
+      raring: [amd64, i386]
+      quantal: [amd64, i386]
+      precise: [i386]
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_common.git
+    version: hydro_dev
 email: fmw@ipa.fhg.de
 committer_email_enabled: false
