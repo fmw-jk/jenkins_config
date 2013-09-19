@@ -1,6 +1,18 @@
 server_name: jenkins-test-server
 user_name: fmw-jk
 repositories:
+  cob_navigation_intern:
+    ros_distro: [groovy]
+    robots: null
+    jobs: []
+    poll: true
+    dependencies: {}
+    prio_ubuntu_distro: oneiric
+    regular_matrix: {}
+    prio_arch: amd64
+    type: git
+    url: git@github.com:ipa320/cob_navigation_intern.git
+    version: fuerte_dev
   ba:
     ros_distro: [groovy]
     robots: null
